@@ -1,12 +1,12 @@
 applications:
-- path: .
-  memory: 256M
-  instances: 1
-  domain: mybluemix.net
-  name: praisinator-web
-  host: praisinator
-  disk_quota: 1024M
-  services:
-  - praisinator-tone-analyzer
-  - praisinator-postgres
-  - praisinator-redis
+  - path: .
+    memory: 256M
+    instances: 1
+    domain: mybluemix.net
+    name: praisinator-web
+    host: praisinator
+    disk_quota: 1024M
+    services:
+    - praisinator-tone-analyzer
+    - praisinator-postgres
+    - praisinator-redis

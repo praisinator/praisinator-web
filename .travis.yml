@@ -5,6 +5,7 @@ test:
 rvm:
   - 2.3.0
 deploy:
+  edge: true
   provider: cloudfoundry
   api: https://api.ng.bluemix.net
   username: jwaldrip

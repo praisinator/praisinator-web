@@ -12,7 +12,7 @@ BotApi.define_resource :users do
   attribute :slack_bot_id, types.String, 'The id of the Slack bot.'
   attribute :slack_bot_token, types.String, 'The token of the Slack bot.'
 
-  relates_to_one :team
+  relates_to_one :team, resource: :teams
   relates_to_many :messages
 
 end

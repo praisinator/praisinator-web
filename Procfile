@@ -1,1 +1,1 @@
-env: rackup -p $PORT
+web: rails s -p $port

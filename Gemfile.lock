@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/brandfolder/jsonapionify.git
-  revision: 2fdc3f2e2706ff2e8b440bdd59822c0b482f08e5
+  revision: 9abc32f61139c9d5e4336ccf89ec2354e2342bd6
   specs:
     jsonapionify (0.9.0)
       activesupport (~> 4.2)

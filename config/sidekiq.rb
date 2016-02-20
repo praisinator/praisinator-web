@@ -1,6 +1,9 @@
 ENV['WEB_DB_POOL_SIZE'] ||= ENV['PUMA_THREADS'] || '10'
 
-ENV['REDIS_URL'] ||= "redis://#{CFENV['praisinator-redis']['uri']}:#{CFENV['praisinator-redis']['port']}"
+ENV['REDIS_URL'] ||= begin
+  hostname, port, name, password = CFENV['praisinator-redis'].values_at('hostname', 'port', 'name', 'password')
+  "redis://#{name}:#{password}@#{hostname}:#{port}"
+end
 
 Sidekiq.configure_server do |config|
   # Configure Redis
@@ -13,9 +16,9 @@ Sidekiq.configure_server do |config|
 
     # Initialize the DB
     ActiveSupport.on_load(:active_record) do
-      config = Rails.application.config.database_configuration[Rails.env]
+      config                      = Rails.application.config.database_configuration[Rails.env]
       config['reaping_frequency'] = (ENV['DATABASE_REAP_FREQ'] || 10).to_i # seconds
-      config['pool'] = (ENV['WORKER_DB_POOL_SIZE'] || Sidekiq.options[:concurrency] + 5).to_i
+      config['pool']              = (ENV['WORKER_DB_POOL_SIZE'] || Sidekiq.options[:concurrency] + 5).to_i
       ActiveRecord::Base.establish_connection(config)
     end
   end
@@ -32,13 +35,13 @@ Sidekiq.configure_client do |config|
 
     # Initialize the DB
     ActiveSupport.on_load(:active_record) do
-      config = Rails.application.config.database_configuration[Rails.env]
+      config                      = Rails.application.config.database_configuration[Rails.env]
       config['reaping_frequency'] = (ENV['DATABASE_REAP_FREQ'] || 10).to_i # seconds
-      config['pool'] = (ENV['WEB_DB_POOL_SIZE'] || request_thread_count).to_i
+      config['pool']              = (ENV['WEB_DB_POOL_SIZE'] || request_thread_count).to_i
       ActiveRecord::Base.establish_connection(config)
     end
   end
 end
 
-Sidekiq.logger = Rails.logger
+Sidekiq.logger                 = Rails.logger
 Sidekiq.default_worker_options = { 'backtrace' => true }

@@ -8,5 +8,5 @@ applications:
     disk_quota: 1024M
     services:
     - praisinator-tone-analyzer
-    - praisinator-postgres
+    - praisinator-postgresql
     - praisinator-redis

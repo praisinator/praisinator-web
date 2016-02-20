@@ -1,4 +1,4 @@
-class BotApi < JSONAPIonify::Base
+class BotApi < JSONAPIonify::Api::Base
 
   # Resource Helpers
   helper :update_instance do |context|

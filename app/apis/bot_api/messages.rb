@@ -12,8 +12,8 @@ BotApi.define_resource :messages do
   attribute :body, types.String, 'The message of the body.'
   attribute :timestamp, types.Float, 'The timestamp of the message.'
 
-  relates_to_one :channel
-  relates_to_one :user
+  relates_to_one :channel, resource: :channels
+  relates_to_one :user, resource: :users
 
   update do |context|
     update_instance context

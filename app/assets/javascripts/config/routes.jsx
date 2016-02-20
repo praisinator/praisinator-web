@@ -1,8 +1,8 @@
 import React from 'react';
 import Relay from 'react-relay';
 import ReactDOM from 'react-dom';
-import RelayRouter from 'react-router-relay';
-import { IndexRoute, Route } from 'react-router';
+// import RelayRouter from 'react-router-relay';
+import { IndexRoute, Route, browserHistory, Router } from 'react-router';
 import $ from 'jquery';
 
 import PraisinatorApp from '../components/PraisinatorApp';
@@ -11,7 +11,7 @@ import TeamsPage from '../components/TeamsPage';
 import TeamPage from '../components/TeamPage';
 
 ReactDOM.render((
-    <RelayRouter history={history}>
+    <Router history={browserHistory}>
         <Route
             path="/" component={PraisinatorApp}
         >
@@ -24,5 +24,5 @@ ReactDOM.render((
           <Route path=":id" component={TeamPage} />
         </Route>
         </Route>
-    </RelayRouter>
+    </Router>
 ), document.getElementById('root'));

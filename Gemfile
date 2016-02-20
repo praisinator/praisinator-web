@@ -27,7 +27,6 @@ group :production do
 end
 
 #React-rails
-gem 'react-rails', '~> 1.6.0'
 gem 'browserify-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 

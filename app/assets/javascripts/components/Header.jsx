@@ -9,7 +9,7 @@ import {IndexLink, Link} from 'react-router';
 class Header extends React.Component {
     render() {
         return (
-        <div class="head"></div>
+        <div class="head">Header</div>
         );
     }
 }

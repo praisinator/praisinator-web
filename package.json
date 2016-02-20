@@ -1,0 +1,41 @@
+{
+  "name": "Praisinator",
+  "version": "1.0.0",
+  "description": "An app to analyze the mood of slack teams and channels",
+  "main": "index.js",
+  "license": "UNLICENCED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/with-our-powers-combined/praisinator-web"
+  },
+  "engines": {
+    "node": "<= 4.2"
+  },
+  "dependencies": {
+    "babel-core": "^5.8.34",
+    "babel-plugin-transform-react-jsx": "^6.1.18",
+    "babel-relay-plugin": "^0.6.3",
+    "babel-relay-plugin-loader": "^0.3.1",
+    "babel-runtime": "^6.1.18",
+    "babelify": "^6.4.0",
+    "bootstrap": "^3.3.6",
+    "browserify": "^11.2.0",
+    "browserify-incremental": "^3.0.1",
+    "classnames": "^2.2.0",
+    "commander": "^2.9.0",
+    "ejs": "^2.3.4",
+    "es6-promise": "^3.0.2",
+    "exenv": "^1.2.0",
+    "history": "^1.13.1",
+    "jquery": "^2.1.4",
+    "keycode": "^2.1.0",
+    "lodash": "^3.10.1",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-relay": "^0.6.0",
+    "react-router": ">=2.0.0-rc2",
+    "react-router-bootstrap": "^0.20.0",
+    "react-router-relay": "^0.9.0",
+    "visible-element": "^1.0.0"
+  }
+}

@@ -8,6 +8,7 @@ BotApi.define_resource :users do
     scope.new slack_id: context.request_id, **context.request_attributes
   end
 
+  attribute :name, types.String, 'The name of the user.'
   attribute :access_token, types.String, 'The access token for the user.'
 
   relates_to_one :team, resource: :teams

@@ -2113,3 +2113,936 @@ Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5ca
 
 
 Started GET "/assets/config/routes.self-fc850dc85f92f3290ed05434b4964c290b96ffdad2a8d233981f283fd7cf7287.js?body=1" for ::1 at 2016-02-20 12:13:55 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:31:44 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1113ms (Views: 1105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-deee14edd3ed0d1b7a55111cf855cc1607d709009d338eac60ffeee50f80e40d.css?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/Header.self-14773f6728634636f25db4298c9e2e81243b3e89943ba47f34398649cc192b82.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-0ebbb9b9a8fa617217d3711712d0cc781cf4dfe3d0dc9b3e6ef66292cf285f17.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/config/routes.self-fc850dc85f92f3290ed05434b4964c290b96ffdad2a8d233981f283fd7cf7287.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-0ebbb9b9a8fa617217d3711712d0cc781cf4dfe3d0dc9b3e6ef66292cf285f17.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:31:46 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:31:47 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:33:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14120-wppsb9" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14120-1r6xfdd" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14120-ss8rmi" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14120-jn35oi" -
+Completed 200 OK in 10824ms (Views: 10823.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-deee14edd3ed0d1b7a55111cf855cc1607d709009d338eac60ffeee50f80e40d.css?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/Header.self-14773f6728634636f25db4298c9e2e81243b3e89943ba47f34398649cc192b82.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:33:34 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:33:35 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:33:56 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 670ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unterminated JSX contents (20:18)
+  18 |         />
+  19 | 
+> 20 |     </RelayRouter>
+     |                   ^
+  21 | ), document.getElementById('root'));
+  22 | ):
+    3: <head>
+    4:   <title>PraisinatorWeb</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3407933212702350670_70351288549540'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 13:34:11 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14120-1sm3734" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14120-1g7g7p6" -
+Completed 200 OK in 4593ms (Views: 4592.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-deee14edd3ed0d1b7a55111cf855cc1607d709009d338eac60ffeee50f80e40d.css?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/config/routes.self-0ce31512943c41dab789dc9e8e606738e1f3ca93e6ad5f17a29a83c9c9ff763e.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/config/routes.self-0ce31512943c41dab789dc9e8e606738e1f3ca93e6ad5f17a29a83c9c9ff763e.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2016-02-20 13:34:16 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:35:17 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 137ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-deee14edd3ed0d1b7a55111cf855cc1607d709009d338eac60ffeee50f80e40d.css?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components/Header.self-14773f6728634636f25db4298c9e2e81243b3e89943ba47f34398649cc192b82.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2016-02-20 13:35:17 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:35:18 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:35:18 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:35:18 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-20 13:35:18 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:35:32 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1443ms (Views: 1442.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6199336972996c99f77a9a7d350bf6f22059a80a0e24085c6d891cd8ed538520.css?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components/Header.self-14773f6728634636f25db4298c9e2e81243b3e89943ba47f34398649cc192b82.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2016-02-20 13:35:33 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for ::1 at 2016-02-20 13:35:34 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:38:00 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3846ms (Views: 3838.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3fe2c6c2ac282a4e6801728f57325ea539ba459e4023605096cebab14afdd231.css?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/Header.self-14773f6728634636f25db4298c9e2e81243b3e89943ba47f34398649cc192b82.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:38:04 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:38:05 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:38:05 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:39:51 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 795ms (Views: 787.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3fe2c6c2ac282a4e6801728f57325ea539ba459e4023605096cebab14afdd231.css?body=1" for ::1 at 2016-02-20 13:39:51 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:39:51 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/Header.self-14773f6728634636f25db4298c9e2e81243b3e89943ba47f34398649cc192b82.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:39:52 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:40:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 85ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/application.self-3fe2c6c2ac282a4e6801728f57325ea539ba459e4023605096cebab14afdd231.css?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/Header.self-14773f6728634636f25db4298c9e2e81243b3e89943ba47f34398649cc192b82.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-a9451f0174ad06331e7fdb294b35ca5caaa0e301d0d4dbb245b332773bad3d27.js?body=1" for ::1 at 2016-02-20 13:40:16 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:40:17 -0700
+
+
+Started GET "/assets/config/routes.self-e5d78daeba9fda869939d312b863d1c10581c774b752da0234082edddedb2df8.js?body=1" for ::1 at 2016-02-20 13:40:17 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 13:41:53 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-1st7b9" -
+Completed 500 Internal Server Error in 2786ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Error while running `/Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-1st7b9" -`:
+
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Cannot find module 'react-bootstrap/lib/NavbarCollapse' from '/Users/lizhenderson/Brandfolder/praisinator/app/assets/javascripts/components'
+    at /Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:46:17
+    at process (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:173:43)
+    at ondir (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:188:17)
+    at load (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:69:43)
+    at onex (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:92:31)
+    at /Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:22:47
+    at FSReqWrap.oncomplete (fs.js:82:15)
+):
+    2: <html>
+    3: <head>
+    4:   <title>PraisinatorWeb</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4408264465727804061_70293800274660'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 13:42:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-w8v8s8" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-4b5o7m" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-1nw3xf9" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-1p3huyv" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-ch25d8" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t [ babelify ] --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-14379-1aj03jz" -
+Completed 200 OK in 14416ms (Views: 14416.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/application.self-3fe2c6c2ac282a4e6801728f57325ea539ba459e4023605096cebab14afdd231.css?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components/Header.self-a8f8622ded0264cf205ec5708f95fcafe9b1979d1f3685aa755b1178f030c993.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components/LandingPage.self-1a4c63ac16f73f01d3d19159715c2127f2c79a4b83478c30c6c18338ade59b3e.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components/PraisinatorApp.self-96289e19b9161e326283505b5c0d4989153413a11d6fac81c2f640f5552bb848.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components/TeamsPage.self-aef97d7e8cb25fc4204caf364caf0adeb199c3644f8846a24f47354d91b504a4.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components/TeamPage.self-fe986f12bbabff7e35ad77ad3371343ec0482ee897b8af421dfb73c37bdc8dc2.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components/emotionChart.self-ba108b17187d0682cc2a51541f630f2d0a955a79a758dac66f717059a2f77aea.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/config/routes.self-3fa352d2af631a9d99e70a05c1cd5cd6022481243ed91cfd8209d4cc360907f8.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2016-02-20 13:43:06 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-20 13:43:07 -0700
+
+
+Started GET "/teams" for ::1 at 2016-02-20 13:44:02 -0700
+
+ActionController::RoutingError (No route matches [GET] "/teams"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/lizhenderson/.rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/lizhenderson/.rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/lizhenderson/.rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (66.1ms)

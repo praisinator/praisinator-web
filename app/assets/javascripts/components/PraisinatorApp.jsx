@@ -7,7 +7,7 @@ import Relay from 'react-relay';
 class PraisinatorApp extends React.Component {
   render() {
     return (
-    <div> TEST </div>
+    <div> {children} </div>
     );
   }
 }

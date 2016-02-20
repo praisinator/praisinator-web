@@ -26,5 +26,7 @@ module PraisinatorWeb
 
     # Active Job
     config.active_job.queue_adapter = :sidekiq
+
+    config.cache_store = :file_store, Dir.mktmpdir
   end
 end

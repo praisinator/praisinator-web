@@ -10,5 +10,8 @@ test:
   database: 'praisinator-web_test'
 
 production:
+  url: postgresql://<%= CFENV['praisinator-postgres']['public_hostname'] %>/compose
+  username: <%= CFENV['praisinator-postgres']['username'] %>
+  password: <%= CFENV['praisinator-postgres']['password'] %>
   <<: *default
 

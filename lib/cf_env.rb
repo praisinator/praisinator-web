@@ -12,8 +12,5 @@ module CFENV
     @parsed ||= (JSON.parse ENV['VCAP_SERVICES'] || '{}').values.flatten.map do |service|
       [service['name'], service['credentials']]
     end.to_h
-    # rescue => e
-    #   warn e
-    #   {}
   end
 end

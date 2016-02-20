@@ -1,5 +1,7 @@
 ENV['WEB_DB_POOL_SIZE'] ||= ENV['PUMA_THREADS'] || '10'
 
+ENV['REDIS_URL'] ||= "redis://#{CFENV['praisinator-redis']['uri']}:#{CFENV['praisinator-redis']['port']}"
+
 Sidekiq.configure_server do |config|
   # Configure Redis
   config.redis = { url: ENV['REDIS_URL'] }

@@ -4,11 +4,13 @@
 /coverage/
 /InstalledFiles
 /pkg/
+/log
 /spec/reports/
 /spec/examples.txt
 /test/tmp/
 /test/version_tmp/
 /tmp/
+*.sqlite3
 
 ## Specific to RubyMotion:
 .dat*
@@ -25,6 +27,8 @@ build/
 /.bundle/
 /vendor/bundle
 /lib/bundler/man/
+.env.development
+.env.test
 
 # for a library or gem, you might want to ignore these files since the code is
 # intended to run in multiple environments; otherwise, check them in:
@@ -35,3 +39,4 @@ build/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 .idea/*
+log/development.log

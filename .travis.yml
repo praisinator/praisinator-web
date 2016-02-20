@@ -1,0 +1,17 @@
+language: ruby
+sudo: false
+test:
+  - 'true'
+rvm:
+  - 2.3.0
+deploy:
+  edge: true
+  provider: cloudfoundry
+  api: https://api.ng.bluemix.net
+  username: jwaldrip
+  password:
+    secure: EEduvxXqX6ZoMTPXqF1axU3gVqN0jGvVlflhno7kBD1vit+uruRfWMXDMdHk+bSCUxJe/3RBwJafCzkojYW+agrlELlrBnLYSDcEixTVYW5J2so+Dky0/D6Ja0Ck1StanHLH8tclcYIp/aWPABeTYIRwNDPhzqoIDrlgERMuwMttOcpiy4uErOBRByZ2Adi40o712aEJAViZJUlZx2GyXO2yBC/lnUduo2DkhjvtUBOhwDivEVkUm2/6eJLdVsIDituymPysf0cQ3X1f+oH4/7m8UgUGQgouBxiZLREbfXPAzXjrMLigOxfv/EOI6r+xbxZgxLRIujlFWWx4F8ym3l7OIFyJOX6bOflsFUXon5IDrEJwfb3+sNej1x/RFSut5N/wHfP1bH1fRmjxpKtYiOQk4kES7F7TQOojqxFwEqtuvJ8nlp+q0TUp/n6H+vnUMik21HwzOxVS5ZaR1HkYTQqvoicWKUVlepUE7/BHzMxABeXTNjMXaS5AXVfPtvxthO3ibVZ6eHknMYroqo27e74//jvTGGQoY6kgPCeYMtEsbJBvtRn38eTU9k336XkbcUc43CsfDXKipD04JHjmt2xEEwaX6E9j9UoKz51EcYd+i2o0l+sbcU3u6lJRtovZIXATtk2wpl4VX9082wzEaB2Tb9+wJYI6xwNad+PkVA4=
+  organization: jason@waldrip.net
+  space: dev
+  on:
+    repo: with-our-powers-combined/praisinator-web

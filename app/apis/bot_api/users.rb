@@ -1,9 +1,12 @@
 BotApi.define_resource :users do
 
-  key :slack_id
+  id :slack_id
   scope { User }
   collection { |scope| scope.all }
-  instance { |scope, slack| scope.find_or_intialize_by(slack_id: slack) }
+  instance { |scope, slack| scope.find_by!(slack_id: slack) }
+  new_instance do |scope, context|
+    scope.new slack_id: context.request_id, **context.request_attributes
+  end
 
   attribute :name, types.String, 'The name of the Slack Team.'
   attribute :slack_bot_id, types.String, 'The id of the Slack bot.'

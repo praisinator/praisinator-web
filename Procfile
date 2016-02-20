@@ -1,1 +1,1 @@
-web: rails s -p $port
+web: rails s -p $PORT

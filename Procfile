@@ -1,1 +1,1 @@
-web: rails s -p $PORT
+web: rake db:migrate && rails s -p $PORT

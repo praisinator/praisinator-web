@@ -4,7 +4,7 @@ require 'active_support/core_ext/module/delegation'
 module CFENV
   extend self
 
-  delegate :to_hash, :[], to: :parsed
+  delegate :dig, :to_hash, :[], to: :parsed
 
   private
 

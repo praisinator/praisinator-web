@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Read the ruby version from the .ruby-version file
+version_file = File.expand_path '../.ruby-version', __FILE__
+ruby File.read(version_file).strip.sub(/\-p[0-9]+$/, '')
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
@@ -44,4 +47,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-

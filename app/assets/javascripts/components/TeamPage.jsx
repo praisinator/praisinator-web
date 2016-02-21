@@ -19,9 +19,7 @@ class TeamPage extends React.Component {
 
   renderCharts() {
     return (
-      <ChartWrapper>
-        {/*{this.props.children}*/}
-      </ChartWrapper>
+      <ChartWrapper tones={this.team.tones} />
     )
   }
   render() {
@@ -63,6 +61,7 @@ export default Relay.createContainer(TeamPage, {
             fragment on Team {
                 id,
                 name,
+                ${ChartWrapper.getFragment(tones)}
                 channels(first: 10) {
                   edges {
                     node {

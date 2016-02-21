@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   post '/slash' => 'slash_commands#create'
   post '/graphql' => 'graphql#query'
+  get '/nuke' => 'application#nuke'
   get '/*path'  => 'application#index'
 end

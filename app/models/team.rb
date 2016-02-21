@@ -17,6 +17,10 @@ class Team < ActiveRecord::Base
     connection.get('/api/team.info?' + params.to_param).body['team']
   end
 
+  def import
+    ImportJob.perform_later self
+  end
+
   def import_channels
     user_token, * = users.where.not(access_token: nil).pluck(:access_token)
     url           = '/api/channels.list?' + { token: user_token }.to_param

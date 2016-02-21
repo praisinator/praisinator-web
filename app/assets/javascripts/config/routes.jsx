@@ -8,7 +8,7 @@ import TeamPage from "../components/TeamPage";
 import Console from "../components/Console";
 import { RelayRouter } from 'react-router-relay';
 
-import RootQuery from '../queries/root_query';
+import RelayQuery from '../queries/relay_query';
 import TeamQuery from '../queries/team_query';
 
 ReactDOM.render((
@@ -16,7 +16,7 @@ ReactDOM.render((
         <Route
             path="/"
             component={PraisinatorApp}
-            queries={RootQuery}
+            queries={RelayQuery}
         >
             <IndexRoute
                 component={LandingPage}

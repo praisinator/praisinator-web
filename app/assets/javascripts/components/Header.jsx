@@ -70,13 +70,12 @@ class Header extends React.Component {
 export default Relay.createContainer(Header, {
     fragments: {
         relay: () => Relay.QL`
-            fragment on Relay {
-                id,
+            fragment on Query {
                 teams(first: 10) {
                     edges {
                         node {
                             id,
-                            ${Team.getFragment('team')}
+                            ${TeamLink.getFragment('team')}
                         }
                     }
                 }

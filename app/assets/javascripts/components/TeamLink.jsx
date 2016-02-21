@@ -23,4 +23,13 @@ class TeamLink extends React.Component {
   }
 }
 
-export default TeamLink;
+export default Relay.createContainer(TeamLink, {
+    fragments: {
+        team: () => Relay.QL`
+          fragment on Team {
+            name,
+            id
+          }
+        `
+    }
+});

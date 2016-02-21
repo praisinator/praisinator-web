@@ -12,6 +12,8 @@
 /tmp/
 *.sqlite3
 
+/node_modules
+
 ## Specific to RubyMotion:
 .dat*
 .repl_history

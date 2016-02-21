@@ -36,7 +36,7 @@ $blue: #017AB5;
    font-weight: 300;
     color: white;
     text-transform: lowercase;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     font-size: 48px;
     padding-bottom: 29px;
 }
@@ -115,7 +115,7 @@ $blue: #017AB5;
   }
   &:before {
     content: "teams";
-    letter-spacing: 0.5em;
+    letter-spacing: 0.05em;
   }
   &.open {
     &:before {

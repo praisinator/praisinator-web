@@ -10045,3 +10045,67 @@ Started GET "/assets/application.self-0859a54b6f0fd5c2d3a3592ea22102256585222882
 
 
 Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 19:00:58 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:34:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2060ms (Views: 2060.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:34:57 -0700
+
+
+Started GET "/assets/application.self-0859a54b6f0fd5c2d3a3592ea2210225658522288281fda5559958c8c107f9ee.css?body=1" for ::1 at 2016-02-20 23:34:57 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:34:57 -0700
+
+
+Started GET "/assets/application.self-0bb8d789e84a61f97baa1e5a2b4ae5847e747dbb9a413f2e32e4c21851eae99a.js?body=1" for ::1 at 2016-02-20 23:34:57 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:34:58 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:35:01 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 99ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:35:01 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:35:01 -0700
+
+
+Started GET "/assets/application.self-0bb8d789e84a61f97baa1e5a2b4ae5847e747dbb9a413f2e32e4c21851eae99a.js?body=1" for ::1 at 2016-02-20 23:35:01 -0700
+
+
+Started GET "/assets/application.self-0859a54b6f0fd5c2d3a3592ea2210225658522288281fda5559958c8c107f9ee.css?body=1" for ::1 at 2016-02-20 23:35:01 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:35:01 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:35:29 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1232ms (Views: 1231.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:35:30 -0700
+
+
+Started GET "/assets/application.self-6e528e77a0c8acf434994c3577f3cac9ba6d9567560ad66049dc9e4806d2ad9f.css?body=1" for ::1 at 2016-02-20 23:35:30 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:35:30 -0700
+
+
+Started GET "/assets/application.self-0bb8d789e84a61f97baa1e5a2b4ae5847e747dbb9a413f2e32e4c21851eae99a.js?body=1" for ::1 at 2016-02-20 23:35:30 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:35:31 -0700

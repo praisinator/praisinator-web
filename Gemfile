@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # API Stuff
 gem 'jsonapionify', github: 'brandfolder/jsonapionify'
-gem 'graphql'
+gem 'graphql-relay'
 
 # Tools
 gem 'pry-rails'

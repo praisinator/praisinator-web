@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/brandfolder/jsonapionify.git
-  revision: 9abc32f61139c9d5e4336ccf89ec2354e2342bd6
+  revision: 7673567c737cddcb20c290735fb93d6d6bce036f
   specs:
     jsonapionify (0.9.0)
       activesupport (~> 4.2)
@@ -88,6 +88,8 @@ GEM
       activesupport (>= 4.1.0)
     graphql (0.10.9)
       parslet (~> 1.6)
+    graphql-relay (0.7.0)
+      graphql (~> 0.8)
     i18n (0.7.0)
     json (1.8.3)
     loofah (2.0.3)
@@ -211,7 +213,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   browserify-rails
   dotenv-rails
-  graphql
+  graphql-relay
   jsonapionify!
   postgresql
   pry-byebug

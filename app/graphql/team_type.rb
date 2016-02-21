@@ -4,6 +4,9 @@ TeamType = GraphQL::ObjectType.define do
   interfaces [NodeIdentification.interface]
   global_id_field :id
 
+  field :name, !types.String
+  field :logo_url, !types.String
+
   field :tone, -> { ToneType } do
     resolve ->(team, *){
       team.tones.composite

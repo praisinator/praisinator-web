@@ -1,8 +1,8 @@
 class CreateUserFeedbacks < ActiveRecord::Migration
   def change
-    create_table :user_feedbacks do |t|
-      t.belongs_to :issuing_user, null: false
-      t.belongs_to :issued_user, null: false
+    create_table :user_feedbacks, force: true do |t|
+      t.belongs_to :issuing_user, null: false, index: true
+      t.belongs_to :issued_user, null: false, index: true
       t.boolean :positive, null: false
       t.timestamps null: false
     end

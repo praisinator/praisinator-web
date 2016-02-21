@@ -1,5 +1,7 @@
 class BotApi < JSONAPIonify::Api::Base
 
+  self.verbose_errors = true
+
   rescue_from ActiveRecord::RecordNotFound, error: :not_found
   rescue_from ActiveRecord::RecordInvalid, error: :unprocessable_entity
 

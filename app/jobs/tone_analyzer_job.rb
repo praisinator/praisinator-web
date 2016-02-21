@@ -39,7 +39,8 @@ class ToneAnalyzerJob < ActiveJob::Base
   end
 
   def config
-    url, username, password = CFENV['praisinator-tone-analyzer']&.values_at('url', 'username', 'password')
+    username = ENV['IBM_TONE_API_USER'] || CFENV['praisinator-tone-analyzer']['username']
+    password = ENV['IBM_TONE_API_PASS'] || CFENV['praisinator-tone-analyzer']['password']
     OpenStruct.new(
       host: URI.parse(url).tap { |u| u.path = '/' }.to_s,
       path: URI.parse(url).path,

@@ -1,9 +1,7 @@
 language: ruby
 sudo: false
-test:
-- 'true'
-rvm:
-- 2.3.0
+test: 'true'
+cache: bundler
 deploy:
   provider: heroku
   api_key:

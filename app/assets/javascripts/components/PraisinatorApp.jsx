@@ -9,7 +9,7 @@ class PraisinatorApp extends React.Component {
   render() {
     return (
       <Grid fluid data-framework="relay">
-          <Header/>
+          <Header relay={relay}/>
           <div className="main-container">
             {this.props.children}
           </div>
@@ -21,4 +21,13 @@ class PraisinatorApp extends React.Component {
   }
 }
 
-export default PraisinatorApp;
+export default Relay.createContainer(PraisinatorApp, {
+  fragments: {
+    relay: () => Relay.QL `
+      fragment on Query {
+        ${Header.getFragment('relay')}
+      }
+    `,
+
+  }
+});

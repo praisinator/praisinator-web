@@ -9505,3 +9505,404 @@ Started GET "/assets/application.self-6d3fb88676de8051a59e9e777de75a84e7cfc74d5f
 
 
 Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:19:37 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:26:15 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1473ms (Views: 1472.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c23eda5f68a6194426b17211d085f78a44aae085d73722d00560a5196c07e978.css?body=1" for ::1 at 2016-02-20 18:26:17 -0700
+
+
+Started GET "/assets/application.self-04ae066d7545b8351bc53a386e1d173fcfebddafb38530fc7997ef26e134f2b5.js?body=1" for ::1 at 2016-02-20 18:26:17 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:26:17 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:26:17 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:26:17 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:27:00 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1294ms (Views: 1294.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:27:02 -0700
+
+
+Started GET "/assets/application.self-a5c9d303f464a323c74168c2bef097618dbff3b4fd520948941a70f0edf5bc01.css?body=1" for ::1 at 2016-02-20 18:27:02 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:27:02 -0700
+
+
+Started GET "/assets/application.self-04ae066d7545b8351bc53a386e1d173fcfebddafb38530fc7997ef26e134f2b5.js?body=1" for ::1 at 2016-02-20 18:27:02 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:27:02 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:39:56 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-16min72" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-1uelqi9" -
+Completed 200 OK in 7764ms (Views: 7764.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9878adbcd74eda4b060a063ea6744b21edec7085613be906dd8bc682304fd45e.css?body=1" for ::1 at 2016-02-20 18:40:04 -0700
+
+
+Started GET "/assets/application.self-16ef1b71b35839b73e64a6ba1960a88c4923529876a121450873bd1b154828ff.js?body=1" for ::1 at 2016-02-20 18:40:04 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:40:04 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:40:04 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:40:04 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:40:31 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-1yqg7ri" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-11116z5" -
+Completed 200 OK in 5779ms (Views: 5779.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:40:37 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:40:37 -0700
+
+
+Started GET "/assets/application.self-7d01332530acea8caa29f9dc616b18a5dfc276b7cbbdcac3eeca9883ea33b31b.js?body=1" for ::1 at 2016-02-20 18:40:37 -0700
+
+
+Started GET "/assets/application.self-9878adbcd74eda4b060a063ea6744b21edec7085613be906dd8bc682304fd45e.css?body=1" for ::1 at 2016-02-20 18:40:37 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:40:37 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:40:40 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 56ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:40:40 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:40:40 -0700
+
+
+Started GET "/assets/application.self-7d01332530acea8caa29f9dc616b18a5dfc276b7cbbdcac3eeca9883ea33b31b.js?body=1" for ::1 at 2016-02-20 18:40:40 -0700
+
+
+Started GET "/assets/application.self-9878adbcd74eda4b060a063ea6744b21edec7085613be906dd8bc682304fd45e.css?body=1" for ::1 at 2016-02-20 18:40:40 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:40:40 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:44:03 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-kcsekw" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-m5js7i" -
+Completed 200 OK in 6073ms (Views: 6072.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:44:10 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:44:10 -0700
+
+
+Started GET "/assets/application.self-9878adbcd74eda4b060a063ea6744b21edec7085613be906dd8bc682304fd45e.css?body=1" for ::1 at 2016-02-20 18:44:10 -0700
+
+
+Started GET "/assets/application.self-53b587b9e72d30eb95e2e457aadde86dc0f9addd7fc87eaf9d957c02eb19123a.js?body=1" for ::1 at 2016-02-20 18:44:10 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:44:10 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-20 18:46:53 -0700
+
+ActionController::RoutingError (No route matches [GET] "/team"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (65.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 18:46:56 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-161fbkx" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-owuqh" -
+Completed 200 OK in 5951ms (Views: 5951.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:47:02 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:47:02 -0700
+
+
+Started GET "/assets/application.self-09b745809b6be3f737cf0520304471a0ac99e8ed8231cff7723cd6cddd4e129c.js?body=1" for ::1 at 2016-02-20 18:47:02 -0700
+
+
+Started GET "/assets/application.self-9878adbcd74eda4b060a063ea6744b21edec7085613be906dd8bc682304fd45e.css?body=1" for ::1 at 2016-02-20 18:47:02 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:47:02 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:48:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:48:03 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:48:03 -0700
+
+
+Started GET "/assets/application.self-9878adbcd74eda4b060a063ea6744b21edec7085613be906dd8bc682304fd45e.css?body=1" for ::1 at 2016-02-20 18:48:03 -0700
+
+
+Started GET "/assets/application.self-09b745809b6be3f737cf0520304471a0ac99e8ed8231cff7723cd6cddd4e129c.js?body=1" for ::1 at 2016-02-20 18:48:03 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:48:03 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:51:45 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-ofsdp6" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-1z04p8m" -
+Completed 200 OK in 7003ms (Views: 7003.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c6ad286caaaaeb971bfdf87e29c1869c6af3dc96f79786db5c59394b44dcb779.css?body=1" for ::1 at 2016-02-20 18:51:52 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:51:52 -0700
+
+
+Started GET "/assets/application.self-d2ad21d400b06e1437e6261889b58f7ae1a6c1afde30847821e0caf1d672968a.js?body=1" for ::1 at 2016-02-20 18:51:52 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:51:52 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:51:53 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 18:53:41 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1347ms (Views: 1346.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c9ed787ca95333d70b08ebcc6145c42c3224cf069e36acc3ec816ac9c86dc0ea.css?body=1" for ::1 at 2016-02-20 18:53:42 -0700
+
+
+Started GET "/assets/application.self-d2ad21d400b06e1437e6261889b58f7ae1a6c1afde30847821e0caf1d672968a.js?body=1" for ::1 at 2016-02-20 18:53:42 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:53:42 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:53:42 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:53:43 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-20 18:54:33 -0700
+
+ActionController::RoutingError (No route matches [GET] "/team"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.5ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 18:54:36 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-1127nrl" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-7mkcgx" -
+Completed 200 OK in 6016ms (Views: 6016.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-68f2a622fd89cb459886dab0837885305be8226dbd5dc9dabee20a7881edbb6b.js?body=1" for ::1 at 2016-02-20 18:54:42 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:54:42 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:54:42 -0700
+
+
+Started GET "/assets/application.self-c9ed787ca95333d70b08ebcc6145c42c3224cf069e36acc3ec816ac9c86dc0ea.css?body=1" for ::1 at 2016-02-20 18:54:42 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:54:42 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-20 18:55:08 -0700
+
+ActionController::RoutingError (No route matches [GET] "/team"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 18:55:12 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-1aqaiuh" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-17710-1s4q1gb" -
+Completed 200 OK in 5775ms (Views: 5775.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 18:55:17 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 18:55:17 -0700
+
+
+Started GET "/assets/application.self-c9ed787ca95333d70b08ebcc6145c42c3224cf069e36acc3ec816ac9c86dc0ea.css?body=1" for ::1 at 2016-02-20 18:55:17 -0700
+
+
+Started GET "/assets/application.self-0bb8d789e84a61f97baa1e5a2b4ae5847e747dbb9a413f2e32e4c21851eae99a.js?body=1" for ::1 at 2016-02-20 18:55:17 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 18:55:18 -0700

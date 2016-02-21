@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 
 import ChannelLink from './ChannelLink';
+import TimeInputContainer from './TimeInputContainer';
 
 class TeamPage extends React.Component {
   renderChannelLinks() {
@@ -16,6 +17,10 @@ class TeamPage extends React.Component {
         <ChannelLink/>
       </span>
     )
+  }
+
+  renderTimeInputContainer() {
+    return <TimeInputContainer/>
   }
   render() {
     return (
@@ -33,8 +38,12 @@ class TeamPage extends React.Component {
             {this.renderChannelLinks()}
           </Col>
           <Col md={8} sm={8}>
-            timeout
-            graph
+            <Row>
+             {this.renderTimeInputContainer()}
+            </Row>
+            <Row>
+              graphs here
+            </Row>
           </Col>
         </Row>
       </Grid>

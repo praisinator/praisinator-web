@@ -60,7 +60,7 @@ class Header extends React.Component {
         <div className={drawer}>
           <Grid>
             <Row>
-              <h2> Choose A Team </h2>
+              <h2> Pick A Team </h2>
               {this.renderTeams()}
             </Row>
           </Grid>

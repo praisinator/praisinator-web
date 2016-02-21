@@ -33,8 +33,13 @@ $blue: #017AB5;
  }
 
  h1, h2, h3, h4 {
-   font-weight: 600px;
- }
+   font-weight: 300;
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: .05em;
+    font-size: 48px;
+    padding-bottom: 29px;
+}
 
 #root {
   height: 100%;
@@ -91,12 +96,14 @@ $blue: #017AB5;
   transition: all 0.5s ease-out;
   &.open {
     top: 50px;
-    bottom: 12px;
+    bottom: 20px;
 
   }
   a {
+    color: $gray;
     &:hover {
-      text-decoration: none
+      color: $gray;
+      text-decoration: none;
     }
   }
 }
@@ -161,18 +168,19 @@ $blue: #017AB5;
 
 
 .btn {
-    display: inline-block;
-    border: none;
-    border-radius: 0;
-    margin-top: 20px;
-    outline: none;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    font-size: 15px;
-    background: $pink;
-    color: $gray;
-    box-shadow: 3px 3px 0 #4D4D4D;
+  display: inline-block;
+  border: 6px solid $pink;
+  border-radius: 0;
+  margin-top: 20px;
+  color: $pink;
+  outline: none;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  font-size: 15px;
+  background: #F1F1F2;
+  font-weight: 600;
+  text-transform: uppercase;
     &:focus:active {
       outline: none;
     }
@@ -180,10 +188,7 @@ $blue: #017AB5;
       color: $gray;
       background: $pink;
       box-shadow: none;
-      margin-top: 22px;
-      margin-left: 2px;
-      color: white;
-      box-shadow: 1px 1px 0 #4D4D4D;
+      border: 6px solid $pink;
     }
   }
 footer {
@@ -191,6 +196,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
+  height: 20px;
   background-color: $pink;
   text-align: center;
   color: $gray;

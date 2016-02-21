@@ -14,7 +14,7 @@ class PraisinatorApp extends React.Component {
             {this.props.children}
           </div>
         <footer className="info">
-        Footer
+          <Grid> WithOurPowersCombined </Grid>
         </footer>
       </Grid>
     );

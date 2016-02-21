@@ -7,8 +7,8 @@ import $ from 'jquery';
 
 import PraisinatorApp from '../components/PraisinatorApp';
 import LandingPage from '../components/LandingPage';
-import TeamsPage from '../components/TeamsPage';
 import TeamPage from '../components/TeamPage';
+
 
 ReactDOM.render((
     <Router history={browserHistory}>
@@ -19,9 +19,9 @@ ReactDOM.render((
           component={LandingPage}
         />
         <Route
-          path="teams" component={TeamsPage}
+          path="team" component={TeamPage}
           >
-          <Route path=":id" component={TeamPage} />
+          {/*<Route path=":channel-name" component={ChannelPage} />*/}
         </Route>
         </Route>
     </Router>

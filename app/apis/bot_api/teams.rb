@@ -33,4 +33,6 @@ BotApi.define_resource :teams do
     update_instance context
   end
 
+  list
+
 end

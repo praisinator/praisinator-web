@@ -11,6 +11,7 @@ gem 'sidekiq'
 gem 'puma'
 gem 'sinatra'
 gem 'faraday'
+gem 'faraday_middleware'
 
 # Asset Pipeline
 gem 'sass-rails', '~> 5.0'

@@ -80,6 +80,8 @@ GEM
       i18n (~> 0.5)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     graphql (0.10.9)
@@ -221,6 +223,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv-rails
   faraday
+  faraday_middleware
   graphql-relay
   jsonapionify!
   postgresql

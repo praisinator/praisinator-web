@@ -1,7 +1,7 @@
 class ToneAnalyzerJob < ActiveJob::Base
 
-  def process(message)
-    response  = connnection.post do |req|
+  def perform(message)
+    response  = connection.post(File.join(config.path, 'v3/tone')) do |req|
       req.params = {
         sentences: false,
         version:   '2016-02-11',
@@ -30,7 +30,7 @@ class ToneAnalyzerJob < ActiveJob::Base
   private
 
   def connection
-    @connection ||= Faraday.new(url: config.url) do |faraday|
+    @connection ||= Faraday.new(url: config.host) do |faraday|
       faraday.basic_auth config.username, config.password
       faraday.request :json
       faraday.response :json
@@ -40,7 +40,12 @@ class ToneAnalyzerJob < ActiveJob::Base
 
   def config
     url, username, password = CFENV['praisinator-tone-analyzer']&.values_at('url', 'username', 'password')
-    OpenStruct.new(url: url, username: username, password: password)
+    OpenStruct.new(
+      host: URI.parse(url).tap { |u| u.path = '/' }.to_s,
+      path: URI.parse(url).path,
+      username: username,
+      password: password
+    )
   end
 
 end

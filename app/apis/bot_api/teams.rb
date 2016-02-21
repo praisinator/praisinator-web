@@ -25,6 +25,10 @@ BotApi.define_resource :teams do
     end
   end
 
+  create do |context|
+    create_instance context
+  end
+
   update do |context|
     update_instance context
   end

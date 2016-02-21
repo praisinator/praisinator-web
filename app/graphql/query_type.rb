@@ -5,7 +5,11 @@ QueryType = GraphQL::ObjectType.define do
   field :node, field: NodeIdentification.field
 
   # The relay loopback
-  field :relay, ->{ QueryType }
+  field :relay, ->{ QueryType } do
+    resolve ->(*){
+      Object.new
+    }
+  end
 
   connection :teams, -> { TeamType.connection_type } do
     resolve ->(*){

@@ -13,7 +13,7 @@ BotApi.define_resource :channels do
   relates_to_one :team, resource: :teams
   relates_to_many :messages do
     create do |context|
-      update_instance context
+      create_instance context
     end
   end
 

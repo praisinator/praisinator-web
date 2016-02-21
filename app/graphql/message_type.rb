@@ -4,9 +4,9 @@ MessageType = GraphQL::ObjectType.define do
   interfaces [NodeIdentification.interface]
   global_id_field :id
 
-  field :tone, ToneType
-  field :team, TeamType
-  field :channel, ChannelType
-  field :user, UserType
+  field :tone, -> { ToneType }
+  field :team, -> { TeamType }
+  field :channel, -> { ChannelType }
+  field :user, -> { UserType }
 
 end

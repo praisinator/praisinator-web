@@ -4,8 +4,8 @@ ToneType = GraphQL::ObjectType.define do
   interfaces [NodeIdentification.interface]
   global_id_field :id
 
-  field :message, MessageType
-  field :user, UserType
+  field :message, -> { MessageType }
+  field :user, -> { UserType }
 
   field :emotional_anger, !types.Float
   field :emotiona_disgust, !types.Float

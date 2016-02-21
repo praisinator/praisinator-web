@@ -11665,3 +11665,246 @@ Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cf
 
 
 Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 08:56:30 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:22:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1626ms (Views: 1626.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:22:03 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:22:03 -0700
+
+
+Started GET "/assets/application.self-7374163ed9bf55c5be9e85ad06300ad53b9e1c85ec2e34d4d7d25d906e8022c2.css?body=1" for ::1 at 2016-02-21 09:22:03 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:22:03 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:22:03 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:31:09 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1370ms (Views: 1369.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:31:11 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:31:11 -0700
+
+
+Started GET "/assets/application.self-be732ad7a906a77d6fa125908f42b0a6a609a83c1141d420c7570af6e3a6ec25.css?body=1" for ::1 at 2016-02-21 09:31:11 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:31:11 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:31:11 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:32:44 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1206ms (Views: 1206.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:32:46 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:32:46 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:32:46 -0700
+
+
+Started GET "/assets/application.self-98ce622affa06cda9fabc38bdab3fe145b08a34f8200942b1f14d0677c0975cd.css?body=1" for ::1 at 2016-02-21 09:32:46 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:32:46 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:33:19 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1267ms (Views: 1266.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:33:20 -0700
+
+
+Started GET "/assets/application.self-c6f591fd7089dfc288347b600505e5932c92728ff183c24f21f99be6bb8ed630.css?body=1" for ::1 at 2016-02-21 09:33:20 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:33:20 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:33:20 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:33:21 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:34:32 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1198ms (Views: 1198.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:34:33 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:34:33 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:34:33 -0700
+
+
+Started GET "/assets/application.self-0fcfe235574147080d6dc7abc8f00c7c2ef56e999f03a0cbfb7d72eb902da6df.css?body=1" for ::1 at 2016-02-21 09:34:33 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:34:34 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:35:46 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1261ms (Views: 1260.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-34e7e60d55508fffaffb48319c5104c41f0b785e034fe3ba0415c453b67abb61.css?body=1" for ::1 at 2016-02-21 09:35:47 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:35:47 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:35:47 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:35:47 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:35:47 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:38:59 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1293ms (Views: 1293.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:39:00 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:39:00 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:39:01 -0700
+
+
+Started GET "/assets/application.self-dc58c87140123fc310e2904a25a84fb38647936c2ab6f0ec2e4468a4356aa50c.css?body=1" for ::1 at 2016-02-21 09:39:01 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:39:01 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:40:01 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1180ms (Views: 1179.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:40:03 -0700
+
+
+Started GET "/assets/application.self-170c6010483de747d0e52f1f921d4852751200aa2302e1023be16276f3eb751d.css?body=1" for ::1 at 2016-02-21 09:40:03 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:40:03 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:40:03 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:40:03 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:43:18 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1174ms (Views: 1173.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f8585c4af9b0fc227e8b911be4a556731270b755db698ac5e581d6b56dbb5a00.css?body=1" for ::1 at 2016-02-21 09:43:19 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:43:19 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:43:19 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:43:19 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:43:20 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:44:54 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1196ms (Views: 1196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:44:55 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:44:55 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:44:55 -0700
+
+
+Started GET "/assets/application.self-7be736b74ed466dfb5afaab79da71b7dd8a3ca74af5f501a707fde64a3c86339.css?body=1" for ::1 at 2016-02-21 09:44:55 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:44:56 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 09:45:30 -0700
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"team"}
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1229ms (Views: 1229.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 09:45:31 -0700
+
+
+Started GET "/assets/application.self-e7aa44dd4624e20a93070035ccfff1b019c882616a17f4a8082be5c04ee984bf.css?body=1" for ::1 at 2016-02-21 09:45:31 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 09:45:31 -0700
+
+
+Started GET "/assets/application.self-85fa31ac210bfe738bf0d0e30e7823e54cf5abe4f098c002da759b6daef22c1c.js?body=1" for ::1 at 2016-02-21 09:45:31 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 09:45:32 -0700

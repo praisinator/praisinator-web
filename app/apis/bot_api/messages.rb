@@ -7,7 +7,7 @@ BotApi.define_resource :messages do
     scope.new **context.request_attributes
   end
 
-  attribute :user_slack_id, types.String, 'The user id who sent the message.'
+  attribute :user_slack_id, types.String, 'The user id who sent the message.', read: false
   attribute :content, types.String, 'The content of the message.'
   attribute :timestamp, types.Float, 'The timestamp of the message.'
 

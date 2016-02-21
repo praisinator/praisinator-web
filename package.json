@@ -35,6 +35,7 @@
     "history": "^1.13.1",
     "jquery": "^2.1.4",
     "keycode": "^2.1.0",
+    "konami-komando": "^1.0.1",
     "lodash": "^3.10.1",
     "react": "^0.14.7",
     "react-bootstrap": "^0.28.3",

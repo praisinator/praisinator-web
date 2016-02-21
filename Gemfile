@@ -16,7 +16,6 @@ gem 'faraday_middleware'
 # Asset Pipeline
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'react-rails'
 
 # API Stuff
 gem 'jsonapionify', github: 'brandfolder/jsonapionify'
@@ -28,6 +27,10 @@ gem 'pry-rails'
 group :production do
   gem 'rails_12factor'
 end
+
+#React-rails
+gem 'browserify-rails'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 group :development, :test do
   gem 'pry-byebug'

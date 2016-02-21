@@ -1,6 +1,6 @@
 require 'sidekiq/web'
 Rails.application.routes.draw do
-  root to: 'application#index'
+  root to: 'home#index'
 
   mount Sidekiq::Web => '/sidekiq'
   mount BotApi => "/api"
@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   post '/slash' => 'slash_commands#create'
   post '/graphql' => 'graphql#query'
   get '/nuke' => 'application#nuke'
-  get '/*path'  => 'application#index'
+  get '/*path'  => 'home#index'
 end

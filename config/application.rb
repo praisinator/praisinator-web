@@ -10,6 +10,9 @@ Bundler.require(*Rails.groups)
 
 module PraisinatorWeb
   class Application < Rails::Application
+    config.browserify_rails.commandline_options = '-t babelify --extension=".jsx" --extension=".es6"'
+    config.browserify_rails.source_map_environments << "development"
+    config.browserify_rails.evaluate_node_modules = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

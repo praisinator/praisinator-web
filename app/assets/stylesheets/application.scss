@@ -1,0 +1,253 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+
+$pink: #CE6E95;
+$green: #91E892;
+$gray: #F1F1F2;
+$blue: #017AB5;
+
+ html, body {
+   width: 100%;
+   height: 100%;
+ }
+
+ body {
+   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-weight: 300;
+   font-weight: 300;
+   letter-spacing: .05em;
+
+ }
+
+ h1, h2, h3, h4 {
+   font-weight: 300;
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+    font-size: 48px;
+    padding-bottom: 29px;
+}
+
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  border: 12px solid $pink;
+  border-top: none;
+  background-color: $gray;
+}
+
+.navbar-default {
+  background-color: $pink;
+  border: none;
+  border-radius: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  display: inline-block;
+  overflow: hidden;
+  padding: 5px 0;
+}
+
+.navbar-nav {
+  float: right;
+  padding: 15px 0px;
+  color: $gray;
+}
+
+#logo {
+  background-image: url("Prasinator_logo-01.png");
+  background-size: 38px auto;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.drawer {
+  z-index: 75;
+  text-align: center;
+  position: absolute;
+  left: 12px;
+  background: #CE6E95;
+  right: 12px;
+  bottom: 100%;
+  top: 0;
+  overflow: scroll;
+  transition: all 0.5s ease-out;
+  &.open {
+    top: 50px;
+    bottom: 20px;
+
+  }
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+}
+
+.drawer-icon {
+  transition: all 0.2s;
+  font-weight: 600;
+  span {
+    display: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &.open {
+    span {
+      display: block;
+      &:before, &:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 4px;
+        width: 25px;
+        background: white;
+        position: absolute;
+        display: block;
+        content: '';
+        margin: 8px 0;
+        right: 30px;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+
+      }
+    }
+
+    .drawer-text {
+      display: none;
+    }
+  }
+}
+
+.team-link-container {
+  padding: 20px 0;
+  text-align: center;
+  .team-logo {
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+    background: #FFF2;
+    padding: 20px;
+    border-radius: 2px;
+    border: 5px solid $gray;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .team-name {
+    padding: 20px 0;
+  }
+}
+
+.team-page {
+  z-index: 50;
+  .team-wrapper {
+    width: 90%;
+    max-width: 200px;
+    .team-logo {
+      background: #FFF2;
+      padding: 20px;
+      border-radius: 2px;
+      border: 5px solid $pink;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .team-name {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+.btn {
+  display: inline-block;
+  border: 6px solid $pink;
+  border-radius: 0;
+  margin-top: 20px;
+  color: $pink;
+  outline: none;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  font-size: 15px;
+  background: #F1F1F2;
+  font-weight: 600;
+  text-transform: uppercase;
+  &:focus:active {
+    outline: none;
+  }
+  &:hover {
+    color: $gray;
+    background: $pink;
+    box-shadow: none;
+    border: 6px solid $pink;
+  }
+}
+
+.time-buttons {
+  width: 100%;
+  .btn {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .open > .dropdown-menu {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: $pink;
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .btn-group.open .dropdown-toggle {
+    margin-bottom: 0px;
+    box-shadow: none;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 20px;
+  background-color: $pink;
+  text-align: center;
+  color: $gray;
+  font-weight: 300;
+}

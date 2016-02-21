@@ -44,7 +44,11 @@ class TeamPage extends React.Component {
                 Team Name
               </div>
             </div>
-            {this.renderChannelLinks()}
+            <Row>
+            <Col md={4} sm={4}>
+              {this.renderChannelLinks()}
+            </Col>
+            </Row>
           </Col>
           <Col md={8} sm={8}>
             <Row>

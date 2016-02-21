@@ -7,7 +7,7 @@ QueryType = GraphQL::ObjectType.define do
   # The relay loopback
   field :relay, ->{ QueryType }
 
-  connection :teams, TeamType.connection_type do
+  connection :teams, -> { TeamType.connection_type } do
     resolve ->(*){
       Team.all
     }

@@ -1,5 +1,5 @@
 UserType = GraphQL::ObjectType.define do
-  name "UserFeedback"
+  name "User"
 
   interfaces [NodeIdentification.interface]
   global_id_field :id

@@ -1,37 +1,26 @@
 class Tone < ActiveRecord::Base
   belongs_to :message
 
-  def self.random_slices(count)
-    (count - 1).times.reduce([1.0]) do |a, i|
-      max = i == 0 ? a[i] : a[1..i].reduce(:+)
-      a.append a[0] - rand(0.0..max)
-    end.tap do |array|
-      array[0] -= array[1..-1].reduce(:+)
-      array.shuffle!
-    end
-  end
-
   def self.composite
-    new.tap do |composite|
-      composite.emotional_anger,
-        composite.emotional_disgust,
-        composite.emotional_sadness,
-        composite.emotional_fear =
-        random_slices(4)
+    t = arel_table
+    select(
+      '-1 AS id',
+      t[:emotional_anger].average.as('emotional_anger'),
+      t[:emotional_disgust].average.as('emotional_disgust'),
+      t[:emotional_sadness].average.as('emotional_sadness'),
+      t[:emotional_fear].average.as('emotional_fear'),
+      t[:emotional_joy].average.as('emotional_joy'),
 
-      composite.writing_analytical,
-        composite.writing_confident,
-        composite.writing_tentative =
-        random_slices(3)
+      t[:writing_analytical].average.as('writing_analytical'),
+      t[:writing_confident].average.as('writing_confident'),
+      t[:writing_tentative].average.as('writing_tentative'),
 
-      composite.social_openness,
-        composite.social_conscientiousness,
-        composite.social_extraversion,
-        composite.social_agreeableness =
-        random_slices(4)
-
-      composite.social_neuroticism = rand(0.0..1.0)
-    end
+      t[:social_openness].average.as('social_openness'),
+      t[:social_conscientiousness].average.as('social_conscientiousness'),
+      t[:social_extraversion].average.as('social_extraversion'),
+      t[:social_agreeableness].average.as('social_agreeableness'),
+      t[:social_neuroticism].average.as('social_neuroticism')
+    ).to_a.first
   end
 
 end

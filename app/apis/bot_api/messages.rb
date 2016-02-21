@@ -4,7 +4,7 @@ BotApi.define_resource :messages do
   collection { |scope| scope.all }
   instance { |scope, id| scope.find(id) }
   new_instance do |scope, context|
-    scope.new slack_id: context.request_id, **context.request_attributes
+    scope.new **context.request_attributes
   end
 
   attribute :user_slack_id, types.String, 'The user id who sent the message.'

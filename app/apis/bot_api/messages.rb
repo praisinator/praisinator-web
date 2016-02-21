@@ -8,7 +8,7 @@ BotApi.define_resource :messages do
   end
 
   attribute :user_slack_id, types.String, 'The user id who sent the message.'
-  attribute :content, types.String, 'The message of the body.'
+  attribute :content, types.String, 'The content of the message.'
   attribute :timestamp, types.Float, 'The timestamp of the message.'
 
   relates_to_one :channel, resource: :channels

@@ -45,6 +45,10 @@ $blue: #017AB5;
     padding-bottom: 29px;
 }
 
+-webkit-scrollbar {
+    background-color: $pink;
+}
+
 #root {
   height: 100%;
   min-height: 100%;
@@ -97,9 +101,11 @@ $blue: #017AB5;
   top: 0;
   overflow: scroll;
   transition: all 0.5s ease-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
   &.open {
     top: 50px;
-    bottom: 20px;
+    bottom: 0px;
 
   }
   a {
@@ -160,7 +166,7 @@ $blue: #017AB5;
     background: #FFF2;
     padding: 20px;
     border-radius: 2px;
-    border: 5px solid $gray;
+    border: 6px solid $gray;
     img {
       width: 100%;
       height: auto;
@@ -180,7 +186,7 @@ $blue: #017AB5;
       background: #FFF2;
       padding: 20px;
       border-radius: 2px;
-      border: 5px solid $pink;
+      border: 6px solid $pink;
       img {
         width: 100%;
         height: auto;
@@ -239,7 +245,9 @@ $blue: #017AB5;
     box-shadow: none;
   }
 }
-
+// .wordmark {
+//   background-image: url("praisonator_wordmark.svg");
+// }
 footer {
   position: fixed;
   bottom: 0;
@@ -250,4 +258,12 @@ footer {
   text-align: center;
   color: $gray;
   font-weight: 300;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+      width: 100%;
+      padding: 0 20px;
+  }
 }

@@ -27,6 +27,7 @@
     "browserify-incremental": "^3.0.1",
     "classnames": "^2.2.0",
     "commander": "^2.9.0",
+    "d3": "^3.4.11",
     "ejs": "^2.3.4",
     "es6-promise": "^3.0.2",
     "exenv": "^1.2.0",

@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/lib/Col';
 
 import ChannelLink from './ChannelLink';
 import TimeInputContainer from './TimeInputContainer';
+import ChartWrapper from './ChartWrapper';
 
 class TeamPage extends React.Component {
   renderChannelLinks() {
@@ -21,6 +22,14 @@ class TeamPage extends React.Component {
 
   renderTimeInputContainer() {
     return <TimeInputContainer/>
+  }
+
+  renderCharts() {
+    return (
+      <ChartWrapper>
+        {this.props.children}
+      </ChartWrapper>
+    )
   }
   render() {
     return (
@@ -42,7 +51,7 @@ class TeamPage extends React.Component {
              {this.renderTimeInputContainer()}
             </Row>
             <Row>
-              graphs here
+              {this.renderCharts()}
             </Row>
           </Col>
         </Row>

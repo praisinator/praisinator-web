@@ -27,7 +27,6 @@ class Header extends React.Component {
     }
   }
   renderTeams() {
-    console.log('in here');
     return (
     <span>
       <TeamLink toggleDrawer={this.toggleDrawer}/>
@@ -50,7 +49,7 @@ class Header extends React.Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#"><div id="logo"/></a>
+              <IndexLink to="/"><div id="logo"/></IndexLink>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav onClick={this.toggleDrawer}>

@@ -9,6 +9,8 @@ gem 'rails', '4.2.5.1'
 gem 'postgresql'
 gem 'sidekiq'
 gem 'puma'
+gem 'sinatra'
+gem 'faraday'
 
 # Asset Pipeline
 gem 'sass-rails', '~> 5.0'

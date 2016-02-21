@@ -1,18 +1,13 @@
 language: ruby
 sudo: false
 test:
-  - 'true'
+- 'true'
 rvm:
-  - 2.3.0
+- 2.3.0
 deploy:
-  edge: true
-  provider: cloudfoundry
-  api: https://api.ng.bluemix.net
-  username: jwaldrip
-  password:
-    secure: EEduvxXqX6ZoMTPXqF1axU3gVqN0jGvVlflhno7kBD1vit+uruRfWMXDMdHk+bSCUxJe/3RBwJafCzkojYW+agrlELlrBnLYSDcEixTVYW5J2so+Dky0/D6Ja0Ck1StanHLH8tclcYIp/aWPABeTYIRwNDPhzqoIDrlgERMuwMttOcpiy4uErOBRByZ2Adi40o712aEJAViZJUlZx2GyXO2yBC/lnUduo2DkhjvtUBOhwDivEVkUm2/6eJLdVsIDituymPysf0cQ3X1f+oH4/7m8UgUGQgouBxiZLREbfXPAzXjrMLigOxfv/EOI6r+xbxZgxLRIujlFWWx4F8ym3l7OIFyJOX6bOflsFUXon5IDrEJwfb3+sNej1x/RFSut5N/wHfP1bH1fRmjxpKtYiOQk4kES7F7TQOojqxFwEqtuvJ8nlp+q0TUp/n6H+vnUMik21HwzOxVS5ZaR1HkYTQqvoicWKUVlepUE7/BHzMxABeXTNjMXaS5AXVfPtvxthO3ibVZ6eHknMYroqo27e74//jvTGGQoY6kgPCeYMtEsbJBvtRn38eTU9k336XkbcUc43CsfDXKipD04JHjmt2xEEwaX6E9j9UoKz51EcYd+i2o0l+sbcU3u6lJRtovZIXATtk2wpl4VX9082wzEaB2Tb9+wJYI6xwNad+PkVA4=
-  organization: jason@waldrip.net
-  space: dev
+  provider: heroku
+  api_key:
+    secure: CR1YQUm7fSFae/fFdgIDOm7L8466YspGUZS8JNS84lQJCBzJUWeCktB5zRo0UWsviCw/BbbGLXsX9AzOpvoENGqGe2ZveNuC/qicS1sX3Z4gXxUx0gDHfGWR16fIvbTXl1EacwcWALyY0NVsH0QPOlJatGXrNLpo0fTXMrJngocz5ShPStQnJRydpkFUFxi09cRYynzIq/Wj0zmV/0clwHnm4bMlJ3satvun8z9Lx+/eEdpPtZofjRdcmd/KWa/n4HrP4ONz3p7AYQNNUKu6XBS0sAqBD0rAQtx4wT6pg733CpOtuWfgwEVt+X8pWhrgZY4aIPkYNvw7TsHYdRWRMGZ6XSe+IXsfSSal5VJgLp8zpEqnr9uaANV3Nk+l6RnR/Gsl/tY0V7eI2orJEy8OpGkxjqnQyBNzrQCtA+3lzAC14CDJ7PYAZaQsrF3owAeWUWE3CtHleTRQA8Ibp4M9ZEM+x5Y1ilRo8Dye/4rB4bOn/qPGE4qdNFSfHZZT3YGnPxxaqCHl36nkZbDY76/lgsjXeXZ8XF6k+OTZQBnx3ZWj6+MM3Q8m40ectHY/MgY0dCeudsLCoWObMqkkB0ruep98oZSyNWuunziDMMAxel4iYaQ/Mh/0YTlAGJOO70YtEPazdBAI8NSl6lM7cpDOIYG/XplIDUx9aV3/gyU3UBI=
+  app: praisinator-web
   on:
     repo: with-our-powers-combined/praisinator-web
-    branch: master

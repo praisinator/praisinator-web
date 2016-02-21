@@ -4,6 +4,7 @@ module SlackData
   def self.connection
     Faraday.new(url: 'https://slack.com/') do |conn|
       conn.response :json
+      conn.response :raise_error
       conn.adapter Faraday.default_adapter
     end
   end

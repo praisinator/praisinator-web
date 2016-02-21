@@ -16,4 +16,20 @@ class Team < ActiveRecord::Base
     }
     connection.get('/api/team.info?' + params.to_param).body['team']
   end
+
+  def import_channels
+    user_token, * = users.where.not(access_token: nil).pluck(:access_token)
+    url           = '/api/channels.list?' + { token: user_token }.to_param
+    new_channels  = SlackData.connection.get(url).body['channels'].select do |message|
+      message['is_member']
+    end.map do |historical_channel|
+      self.channels.find do |channel|
+        channel.slack_id == historical_channel['id']
+      end || self.channels.new(
+        slack_id:   historical_channel['id'],
+        slack_data: historical_channel
+      )
+    end.select(&:new_record?)
+    Channel.import(new_channels)
+  end
 end

@@ -2,7 +2,7 @@ import React from 'react';
 import Relay from 'react-relay';
 import {IndexLink, Link} from 'react-router';
 import Navbar from 'react-bootstrap/lib/Navbar';
-import classNames from 'classNames';
+import classNames from 'classnames';
 import NavbarCollapse from 'react-bootstrap/lib/NavbarCollapse';
 import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import Nav from 'react-bootstrap/lib/Nav';

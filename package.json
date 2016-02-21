@@ -25,7 +25,7 @@
     "bootstrap": "^3.3.6",
     "browserify": "^11.2.0",
     "browserify-incremental": "^3.0.1",
-    "classnames": "^2.2.0",
+    "classnames": "^2.2.3",
     "commander": "^2.9.0",
     "ejs": "^2.3.4",
     "es6-promise": "^3.0.2",

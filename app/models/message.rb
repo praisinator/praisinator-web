@@ -4,13 +4,17 @@ class Message < ActiveRecord::Base
   belongs_to :channel
   belongs_to :user
 
-  after_create :process_tone
+  def self.analyze_tone(force: false)
+    includes(:tone).find_each { |i| i.analyze_tone force: force }
+  end
+
+  after_create :analyze_tone
 
   def user_slack_id=(value)
     self.user = User.find_or_initialize_by(slack_id: value, team_id: channel.team_id)
   end
 
-  def process_tone
-    ToneAnalyzerJob.perform_later(self)
+  def analyze_tone(force: false)
+    ToneAnalyzerJob.perform_later(self) unless !force && tone.present?
   end
 end

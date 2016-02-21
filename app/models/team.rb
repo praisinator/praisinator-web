@@ -10,6 +10,8 @@ class Team < ActiveRecord::Base
   has_many :tones, through: :messages
   has_many :issued_feedbacks, through: :users
 
+  after_create :import
+
   slack_data(refresh_in: 1.day) do |connection|
     params = {
       token: slack_bot_token,
@@ -18,7 +20,7 @@ class Team < ActiveRecord::Base
   end
 
   def import
-    ImportJob.perform_later self
+    TeamImportJob.perform_later self
   end
 
   def import_channels

@@ -10,12 +10,18 @@ class Channel < ActiveRecord::Base
   has_many :tones, through: :messages
   has_many :issued_feedbacks, through: :users
 
+  after_create :import
+
   slack_data(refresh_in: 1.day) do |connection|
     params = {
       token:   team.slack_bot_token,
       channel: slack_id
     }
     connection.get('/api/channels.info?' + params.to_param).body['channel']
+  end
+
+  def import
+    ChannelImportJob.perform_later
   end
 
   def import_messages

@@ -69,7 +69,7 @@ class Header extends React.Component {
 
 export default Relay.createContainer(Header, {
     fragments: {
-        relay: () => Relay.QL`
+        root: () => Relay.QL`
             fragment on Query {
                 teams(first: 3) {
                     edges {

@@ -9,7 +9,7 @@ class PraisinatorApp extends React.Component {
   render() {
     return (
       <Grid fluid data-framework="relay">
-          <Header relay={this.props.relay}/>
+          <Header root={this.props.root}/>
           <div className="main-container">
             {this.props.children}
           </div>

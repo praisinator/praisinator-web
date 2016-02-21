@@ -23,6 +23,7 @@ gem 'graphql-relay'
 
 # Tools
 gem 'pry-rails'
+gem 'activerecord-import'
 
 group :production do
   gem 'rails_12factor'

@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   # api routes...
   mount BotApi => "/api"
+
+  get '/*path' => 'home#index'
 end

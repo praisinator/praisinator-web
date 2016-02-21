@@ -5,7 +5,7 @@ UserFeedbackType = GraphQL::ObjectType.define do
   global_id_field :id
 
   field :name, !types.String
-  field :overall_feedback, !types.Integer
+  field :overall_feedback, !types.Int
   field :team, -> { TeamType }
 
   field :tone, -> { ToneType } do

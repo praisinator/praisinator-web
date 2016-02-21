@@ -7,7 +7,7 @@ class Message < ActiveRecord::Base
   after_create :process_tone
 
   def user_slack_id=(value)
-    self.user = User.find_or_initialize_by(slack_id: value, team: team)
+    self.user = User.find_or_initialize_by(slack_id: value, team_id: channel.team_id)
   end
 
   private

@@ -8,6 +8,24 @@ UserType = GraphQL::ObjectType.define do
   field :overall_feedback, !types.Int
   field :team, -> { TeamType }
 
+  field :feedback_count, !types.Int  do
+    resolve ->(user, *){
+      user.issued_feedbacks.count
+    }
+  end
+
+  field :channel_count, !types.Int  do
+    resolve ->(user, *){
+      user.channels.count
+    }
+  end
+
+  field :message_count, !types.Int  do
+    resolve ->(user, *){
+      user.messages.count
+    }
+  end
+
   field :tone, -> { ToneType } do
     resolve ->(user, *){
       user.tones.composite

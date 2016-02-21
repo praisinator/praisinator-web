@@ -5,7 +5,26 @@ TeamType = GraphQL::ObjectType.define do
   global_id_field :id
 
   field :name, !types.String
+  field :overall_feedback, !types.Int
   field :logo_url, !types.String
+
+  field :feedback_count, !types.Int  do
+    resolve ->(team, *){
+      team.issued_feedbacks.count
+    }
+  end
+
+  field :channel_count, !types.Int  do
+    resolve ->(team, *){
+      team.channels.count
+    }
+  end
+
+  field :message_count, !types.Int  do
+    resolve ->(team, *){
+      team.messages.count
+    }
+  end
 
   field :tone, -> { ToneType } do
     resolve ->(team, *){

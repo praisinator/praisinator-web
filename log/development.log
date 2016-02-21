@@ -10109,3 +10109,524 @@ Started GET "/assets/application.self-0bb8d789e84a61f97baa1e5a2b4ae5847e747dbb9a
 
 
 Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:35:31 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:40:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-18648-h872mh" -
+Completed 500 Internal Server Error in 1762ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Error while running `/Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-18648-h872mh" -`:
+
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+SyntaxError: /Users/lizhenderson/Brandfolder/praisinator/app/assets/javascripts/components/LandingPage.jsx: Unterminated JSX contents (13:10)
+  11 |         Landing Page
+  12 |       </Row>  
+> 13 |     <Grid>
+     |           ^
+  14 |     );
+  15 |   }
+  16 | }
+    at Parser.pp.raise (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:1425:13)
+    at Parser.pp.jsxReadToken (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:4030:12)
+    at Parser.<anonymous> (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:4384:21)
+    at Parser.readToken (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:3703:22)
+    at Parser.nextToken (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:4950:19)
+    at Parser.next (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:4875:10)
+    at Parser.eat (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:4882:12)
+    at Parser.pp.expect (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:2899:15)
+    at Parser.pp.jsxParseOpeningElementAt (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:4292:8)
+    at Parser.pp.jsxParseElementAt (/Users/lizhenderson/Brandfolder/praisinator/node_modules/babylon/index.js:4311:29)
+):
+    2: <html>
+    3: <head>
+    4:   <title>PraisinatorWeb</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= csrf_meta_tags %>
+    7: </head>
+    8: <body>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1328245699013571126_70319765062040'
+  app/controllers/home_controller.rb:4:in `index'
+  lib/graphql_reloader.rb:10:in `call'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 23:41:06 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-18648-3ekp7h" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-18648-q73k1p" -
+Completed 200 OK in 13358ms (Views: 13358.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:41:19 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:41:19 -0700
+
+
+Started GET "/assets/application.self-0d7d2c0c22ee270ff7960a37628e1705b9d388e6617bec21917bbba1324b81f4.js?body=1" for ::1 at 2016-02-20 23:41:19 -0700
+
+
+Started GET "/assets/application.self-6e528e77a0c8acf434994c3577f3cac9ba6d9567560ad66049dc9e4806d2ad9f.css?body=1" for ::1 at 2016-02-20 23:41:19 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:41:20 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:42:44 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1284ms (Views: 1283.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:42:46 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:42:46 -0700
+
+
+Started GET "/assets/application.self-0d7d2c0c22ee270ff7960a37628e1705b9d388e6617bec21917bbba1324b81f4.js?body=1" for ::1 at 2016-02-20 23:42:46 -0700
+
+
+Started GET "/assets/application.self-e51ae9c46ec0244a6f76ba58fdd5f1f37eac418e41a5f7ba84e56e959c04bfb7.css?body=1" for ::1 at 2016-02-20 23:42:46 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:42:46 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:43:08 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1369ms (Views: 1368.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:43:09 -0700
+
+
+Started GET "/assets/application.self-de60c21da27681b0f347d39c839c18568261f52398260188a0c2d2c717b5c187.css?body=1" for ::1 at 2016-02-20 23:43:09 -0700
+
+
+Started GET "/assets/application.self-0d7d2c0c22ee270ff7960a37628e1705b9d388e6617bec21917bbba1324b81f4.js?body=1" for ::1 at 2016-02-20 23:43:09 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:43:09 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:43:10 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:43:42 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1223ms (Views: 1223.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ff881668cd39412e544b2f87c819b6bad1900fb8eb12029e2dca623cc15a9627.css?body=1" for ::1 at 2016-02-20 23:43:44 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:43:44 -0700
+
+
+Started GET "/assets/application.self-0d7d2c0c22ee270ff7960a37628e1705b9d388e6617bec21917bbba1324b81f4.js?body=1" for ::1 at 2016-02-20 23:43:44 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:43:44 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:43:44 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:46:31 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1403ms (Views: 1402.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-101f9a5e058799b37a3aa15f811590fe162d7974c3dc06df1027aceffc19c8f8.css?body=1" for ::1 at 2016-02-20 23:46:33 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:46:33 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:46:33 -0700
+
+
+Started GET "/assets/application.self-0d7d2c0c22ee270ff7960a37628e1705b9d388e6617bec21917bbba1324b81f4.js?body=1" for ::1 at 2016-02-20 23:46:33 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:46:33 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:56:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-18648-hqw8s7" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160220-18648-1kkerwf" -
+Completed 200 OK in 6316ms (Views: 6316.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:56:08 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:56:08 -0700
+
+
+Started GET "/assets/application.self-451e927df4f0491ebb2855810ccd625e67041e3ec79a0200372b8672d3ae18b5.css?body=1" for ::1 at 2016-02-20 23:56:08 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-20 23:56:08 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:56:09 -0700
+
+
+Started GET "/" for ::1 at 2016-02-20 23:57:06 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "... rotate(-45deg)": expected "{", was ";"):
+    2: <html>
+    3: <head>
+    4:   <title>PraisinatorWeb</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= csrf_meta_tags %>
+    7: </head>
+    8: <body>
+  app/assets/stylesheets/application.scss:139
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1328245699013571126_70319765062040'
+  app/controllers/home_controller.rb:4:in `index'
+  lib/graphql_reloader.rb:10:in `call'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.6ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 23:57:19 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1189ms (Views: 1188.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-98461acbe9edea007e251493bfc1e6886913d3048d7d63900d45914236b2ed43.css?body=1" for ::1 at 2016-02-20 23:57:20 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 23:57:20 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-20 23:57:20 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-20 23:57:20 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-20 23:57:20 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 00:00:04 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1346ms (Views: 1345.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 00:00:05 -0700
+
+
+Started GET "/assets/application.self-16b43df3e2c74272abde46ea74abb9b58d61612f426401b8e07de564771913ac.css?body=1" for ::1 at 2016-02-21 00:00:05 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-21 00:00:05 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 00:00:05 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 00:00:06 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 00:00:38 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1166ms (Views: 1165.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 00:00:39 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 00:00:39 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-21 00:00:39 -0700
+
+
+Started GET "/assets/application.self-15ea3242b6b6a86c3d440fdb678beaedbc2f9b1855017d6a9382b0a83aed42e4.css?body=1" for ::1 at 2016-02-21 00:00:39 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 00:00:39 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 00:04:54 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 00:04:55 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 00:04:55 -0700
+
+
+Started GET "/assets/application.self-15ea3242b6b6a86c3d440fdb678beaedbc2f9b1855017d6a9382b0a83aed42e4.css?body=1" for ::1 at 2016-02-21 00:04:55 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-21 00:04:55 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 00:04:55 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 00:07:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1272ms (Views: 1271.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 00:07:19 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-21 00:07:19 -0700
+
+
+Started GET "/assets/application.self-32cd7430e98798d10b5d6c8f2a01535745a25ba3d60a784e073c09865fd87a9d.css?body=1" for ::1 at 2016-02-21 00:07:19 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 00:07:19 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 00:07:20 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 00:10:19 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1218ms (Views: 1218.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 00:10:20 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 00:10:20 -0700
+
+
+Started GET "/assets/application.self-c83684f94b7218c2847bb1685160d8f2e99febb44d019b75fe482d2f4adc8a1d.css?body=1" for ::1 at 2016-02-21 00:10:20 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-21 00:10:20 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 00:10:21 -0700
+
+
+Started GET "/team" for ::1 at 2016-02-21 00:12:49 -0700
+
+ActionController::RoutingError (No route matches [GET] "/team"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.3ms)
+
+
+Started GET "/team" for ::1 at 2016-02-21 00:13:05 -0700
+
+ActionController::RoutingError (No route matches [GET] "/team"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.8ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.0ms)
+
+
+Started GET "/team" for ::1 at 2016-02-21 00:13:18 -0700
+
+ActionController::RoutingError (No route matches [GET] "/team"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-21 00:13:26 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1433ms (Views: 1433.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-21 00:13:27 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-04f4af6c43045ccd131e82b840caa9220a33c197feb590e5f0efe3f5909d54dc.css?body=1" for ::1 at 2016-02-21 00:13:27 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 00:13:28 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 00:14:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1231ms (Views: 1230.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 00:14:25 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 00:14:25 -0700
+
+
+Started GET "/assets/application.self-dd4fe88e97ab6da80e60c8bd05667fe7a525badfbdfc2e79ea4fb31cec6e08ce.js?body=1" for ::1 at 2016-02-21 00:14:25 -0700
+
+
+Started GET "/assets/application.self-fa56b339258b85e0cc57fa1fdbb58a1e1fea2fe9f800fb2c8892ac2be38919e3.css?body=1" for ::1 at 2016-02-21 00:14:25 -0700
+
+
+Started GET "/assets/Prasinator_logo-01.png" for ::1 at 2016-02-21 00:14:25 -0700

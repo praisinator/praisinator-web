@@ -54,7 +54,11 @@ class Header extends React.Component {
             </Navbar.Brand>
           </Navbar.Header>
           <Nav onClick={this.toggleDrawer}>
-            <div className={drawerIcon}></div>
+            <div className={drawerIcon}>
+              <span></span>
+              <span></span>
+              <div className="drawer-text"> teams </div>
+            </div>
           </Nav>
         </Navbar>
         <div className={drawer}>

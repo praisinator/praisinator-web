@@ -16,6 +16,8 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+
+
 $pink: #CE6E95;
 $green: #91E892;
 $gray: #F1F1F2;
@@ -29,6 +31,8 @@ $blue: #017AB5;
  body {
    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
    font-weight: 300;
+   font-weight: 300;
+   letter-spacing: .05em;
 
  }
 
@@ -44,7 +48,6 @@ $blue: #017AB5;
 #root {
   height: 100%;
   min-height: 100%;
-  font-weight: 600;
 }
 
 .container-fluid {
@@ -110,16 +113,39 @@ $blue: #017AB5;
 
 .drawer-icon {
   transition: all 0.2s;
+  font-weight: 600;
+  span {
+    display: none;
+  }
   &:hover {
     cursor: pointer;
   }
-  &:before {
-    content: "teams";
-    letter-spacing: 0.05em;
-  }
   &.open {
-    &:before {
-      content: "x";
+    span {
+      display: block;
+      &:before, &:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 4px;
+        width: 25px;
+        background: white;
+        position: absolute;
+        display: block;
+        content: '';
+        margin: 8px 0;
+        right: 30px;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+
+      }
+    }
+
+    .drawer-text {
+      display: none;
     }
   }
 }

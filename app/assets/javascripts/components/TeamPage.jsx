@@ -27,7 +27,7 @@ class TeamPage extends React.Component {
   renderCharts() {
     return (
       <ChartWrapper>
-        {this.props.children}
+        {/*{this.props.children}*/}
       </ChartWrapper>
     )
   }
@@ -64,4 +64,14 @@ class TeamPage extends React.Component {
   }
 }
 
-export default TeamPage;
+export default Relay.createContainer(TeamPage, {
+    fragments: {
+        team: () => Relay.QL`
+            fragment on Team {
+                id,
+                name
+
+            }
+        `
+    }
+});

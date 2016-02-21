@@ -9,6 +9,6 @@ NodeIdentification = GraphQL::Relay::GlobalNodeIdentification.define do
   # Given an application object,
   # return a GraphQL ObjectType to expose that object
   type_from_object -> (object) do
-    Object.const_get "#{object.name}Type"
+    Object.const_get "#{object.class.name}Type"
   end
 end

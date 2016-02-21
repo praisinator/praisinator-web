@@ -27,7 +27,7 @@ class Header extends React.Component {
     }
   };
   renderTeams() {
-    return root.teams.edges.map(({node}) => <TeamLink key={node.id} team={team}/>);
+    return this.props.root.teams.edges.map(({node}) => <TeamLink key={node.id} team={node}/>);
   }
     render() {
       var drawer = classNames({
@@ -71,7 +71,7 @@ export default Relay.createContainer(Header, {
     fragments: {
         root: () => Relay.QL`
             fragment on Query {
-                teams(first: 3) {
+                teams(first: 10) {
                     edges {
                         node {
                           id,

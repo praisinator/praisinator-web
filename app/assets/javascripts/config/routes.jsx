@@ -21,14 +21,12 @@ ReactDOM.render((
             <IndexRoute
                 component={LandingPage}
             />
-            {/*}<Route
+            <Route
                 path="console" component={Console}
             />
-            <Route
-                path="team" component={TeamPage} queries={TeamQuery}
-            >
-                <Route path=":channel-name" component={ChannelPage} />
-            </Route>*/}
+              <Route path="teams/:id" component={TeamPage} queries={TeamQuery}>
+
+              </Route>
         </Route>
     </RelayRouter>
 ), document.getElementById('root'));

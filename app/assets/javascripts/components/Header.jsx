@@ -71,11 +71,11 @@ export default Relay.createContainer(Header, {
     fragments: {
         relay: () => Relay.QL`
             fragment on Query {
-                teams(first: 10) {
+                teams(first: 3) {
                     edges {
                         node {
-                            id,
-                            ${TeamLink.getFragment('team')}
+                          id,
+                          ${TeamLink.getFragment('team')}
                         }
                     }
                 }

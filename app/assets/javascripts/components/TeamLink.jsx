@@ -27,8 +27,8 @@ export default Relay.createContainer(TeamLink, {
     fragments: {
         team: () => Relay.QL`
           fragment on Team {
-            name,
-            id
+            id,
+            name
           }
         `
     }

@@ -16205,3 +16205,514 @@ Started GET "/assets/application.self-72584484b800c8338bd457bec2b87072d8987353c8
 
 
 Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 15:15:39 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 15:16:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (31.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameToChannel (20160221183226)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.9ms)[0m  [1mALTER TABLE "channels" ADD "name" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160221183226"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddSlackData (20160221195158)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "slack_data" jsonb[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "slack_data_updated_at" timestamp
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "teams" ADD "slack_data" jsonb[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "teams" ADD "slack_data_updated_at" timestamp
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "channels" ADD "slack_data" jsonb[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "channels" ADD "slack_data_updated_at" timestamp
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160221195158"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to DropNames (20160221202048)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "users" DROP "name"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+
+
+Started GET "/" for ::1 at 2016-02-21 15:17:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (72.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DropNames (20160221202048)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "users" DROP "name"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTeams (20160220134529)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "slack_id" character varying NOT NULL, "name" character varying, "slack_bot_id" character varying NOT NULL, "logo_url" character varying, "slack_bot_token" character varying NOT NULL, "active" boolean DEFAULT 't', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_teams_on_slack_id" ON "teams"  ("slack_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160220134529"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Migrating to CreateUsers (20160220134855)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE "users" ("id" serial primary key, "team_id" integer NOT NULL, "slack_id" character varying NOT NULL, "name" character varying, "access_token" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX  "index_users_on_team_id" ON "users"  ("team_id")[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX  "index_users_on_slack_id" ON "users"  ("slack_id")
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD CONSTRAINT "fk_rails_b2bbf87303"
+FOREIGN KEY ("team_id")
+  REFERENCES "teams" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160220134855"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateChannels (20160220140318)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "channels" ("id" serial primary key, "team_id" integer NOT NULL, "slack_id" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE  INDEX  "index_channels_on_team_id" ON "channels"  ("team_id")
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "index_channels_on_slack_id" ON "channels"  ("slack_id")[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "channels" ADD CONSTRAINT "fk_rails_a27e8ec9e1"
+FOREIGN KEY ("team_id")
+  REFERENCES "teams" ("id")
+ ON DELETE CASCADE
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160220140318"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Migrating to CreateMessages (20160220140603)
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (4.1ms)[0m  CREATE TABLE "messages" ("id" serial primary key, "channel_id" integer NOT NULL, "user_id" integer NOT NULL, "content" text NOT NULL, "timestamp" float) 
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX  "index_messages_on_channel_id" ON "messages"  ("channel_id")[0m
+  [1m[35m (1.4ms)[0m  CREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "messages" ADD CONSTRAINT "fk_rails_5baf0f07af"
+FOREIGN KEY ("channel_id")
+  REFERENCES "channels" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35m (0.8ms)[0m  ALTER TABLE "messages" ADD CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160220140603"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Migrating to CreateTones (20160220143128)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "tones" ("id" serial primary key, "message_id" integer NOT NULL, "emotional_anger" float, "emotional_disgust" float, "emotional_fear" float, "emotional_joy" float, "emotional_sadness" float, "writing_analytical" float, "writing_confident" float, "writing_tentative" float, "social_openness" float, "social_conscientiousness" float, "social_extraversion" float, "social_agreeableness" float, "social_neuroticism" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE  INDEX  "index_tones_on_message_id" ON "tones"  ("message_id")[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "tones" ADD CONSTRAINT "fk_rails_05e8bdcfe5"
+FOREIGN KEY ("message_id")
+  REFERENCES "messages" ("id")
+ ON DELETE CASCADE
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160220143128"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to CreateUserFeedbacks (20160220230554)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "user_feedbacks" ("id" serial primary key, "issuing_user_id" integer NOT NULL, "issued_user_id" integer NOT NULL, "positive" boolean NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE  INDEX  "index_user_feedbacks_on_issuing_user_id" ON "user_feedbacks"  ("issuing_user_id")[0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_user_feedbacks_on_issued_user_id" ON "user_feedbacks"  ("issued_user_id")
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "user_feedbacks" ADD CONSTRAINT "fk_rails_665dbf104c"
+FOREIGN KEY ("issuing_user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35m (3.4ms)[0m  ALTER TABLE "user_feedbacks" ADD CONSTRAINT "fk_rails_886983959b"
+FOREIGN KEY ("issued_user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160220230554"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Migrating to AddNameToChannel (20160221183226)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "channels" ADD "name" character varying
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160221183226"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to AddSlackData (20160221195158)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "slack_data" jsonb
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "slack_data_updated_at" timestamp[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "teams" ADD "slack_data" jsonb
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "teams" ADD "slack_data_updated_at" timestamp[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "channels" ADD "slack_data" jsonb
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "channels" ADD "slack_data_updated_at" timestamp[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160221195158"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Migrating to DropNames (20160221202048)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" DROP "name"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "channels" DROP "name"
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "teams" DROP "name"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160221202048"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'channels'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (7.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'teams'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tones'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'user_feedbacks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2016-02-21 15:18:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4316-1frrp6q" -
+Completed 500 Internal Server Error in 3244ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Error while running `/Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4316-1frrp6q" -`:
+
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Cannot find module 'konami-komando' from '/Users/lizhenderson/Brandfolder/praisinator/app/assets/javascripts'
+    at /Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:46:17
+    at process (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:173:43)
+    at ondir (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:188:17)
+    at load (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:69:43)
+    at onex (/Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:92:31)
+    at /Users/lizhenderson/Brandfolder/praisinator/node_modules/resolve/lib/async.js:22:47
+    at FSReqWrap.oncomplete (fs.js:82:15)
+):
+    2: <html>
+    3: <head>
+    4:   <title>PraisinatorWeb</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= csrf_meta_tags %>
+    7: 
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___265497236344481159_70317175893900'
+  app/controllers/home_controller.rb:4:in `index'
+  lib/graphql_reloader.rb:10:in `call'
+
+
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.6ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.1ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.5ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lizhenderson/.gem/ruby/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-21 15:19:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4349-v7v80u" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4349-mmyit8" -
+Completed 200 OK in 7202ms (Views: 7202.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/d3Style.self-2623ec4ad8429a3a7b1ba00fe81a47fc9259f4aa9a89d69b1ab0ddddcdbc5622.css?body=1" for ::1 at 2016-02-21 15:19:28 -0700
+
+
+Started GET "/assets/graphiql.self-bdbfd83e6a7cc99084a3db1122f10be8eeef78d62ed0db60be811e36cb94dfe2.css?body=1" for ::1 at 2016-02-21 15:19:28 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 15:19:28 -0700
+
+
+Started GET "/assets/application.self-7e87ecd3afe245dd7709e2e610ef0609c2d83346c3203147d940dff54fbc2833.js?body=1" for ::1 at 2016-02-21 15:19:28 -0700
+
+
+Started GET "/assets/application.self-1aa0c746cf994afedb7d74d35856f85fac369f04715693786dd619fcfe6c8431.css?body=1" for ::1 at 2016-02-21 15:19:28 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 15:19:28 -0700
+
+
+Started GET "/" for ::1 at 2016-02-21 15:20:57 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4349-12hk3pc" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4349-p98miq" -
+Completed 200 OK in 6863ms (Views: 6863.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/d3Style.self-2623ec4ad8429a3a7b1ba00fe81a47fc9259f4aa9a89d69b1ab0ddddcdbc5622.css?body=1" for ::1 at 2016-02-21 15:21:04 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 15:21:04 -0700
+
+
+Started GET "/assets/application.self-1aa0c746cf994afedb7d74d35856f85fac369f04715693786dd619fcfe6c8431.css?body=1" for ::1 at 2016-02-21 15:21:04 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 15:21:04 -0700
+
+
+Started GET "/assets/graphiql.self-bdbfd83e6a7cc99084a3db1122f10be8eeef78d62ed0db60be811e36cb94dfe2.css?body=1" for ::1 at 2016-02-21 15:21:04 -0700
+
+
+Started GET "/assets/application.self-ee4350d150510110cb7bd59d6786ffac12efd5a5ed99161c9d3dd88434f23f0f.js?body=1" for ::1 at 2016-02-21 15:21:04 -0700
+
+
+Started POST "/graphql" for ::1 at 2016-02-21 15:21:05 -0700
+Processing by GraphqlController#query as */*
+  Parameters: {"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}, "graphql"=>{"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}}}
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-21 15:21:35 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --list --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4349-7eqcie" -
+Browserify: /Users/lizhenderson/Brandfolder/praisinator/node_modules/.bin/browserifyinc -d -t babelify --extension=".jsx" --extension=".es6" --cachefile=/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/browserifyinc-cache.json -o "/Users/lizhenderson/Brandfolder/praisinator/tmp/cache/browserify-rails/output20160221-4349-1wvy1v4" -
+Completed 200 OK in 6859ms (Views: 6858.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1dcd4b812f102ff73e873ea6dad8066c6bc38feafdad0dac7753dd2e8a50a44d.js?body=1" for ::1 at 2016-02-21 15:21:42 -0700
+
+
+Started GET "/assets/d3Style.self-2623ec4ad8429a3a7b1ba00fe81a47fc9259f4aa9a89d69b1ab0ddddcdbc5622.css?body=1" for ::1 at 2016-02-21 15:21:42 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 15:21:42 -0700
+
+
+Started GET "/assets/graphiql.self-bdbfd83e6a7cc99084a3db1122f10be8eeef78d62ed0db60be811e36cb94dfe2.css?body=1" for ::1 at 2016-02-21 15:21:42 -0700
+
+
+Started GET "/assets/application.self-1aa0c746cf994afedb7d74d35856f85fac369f04715693786dd619fcfe6c8431.css?body=1" for ::1 at 2016-02-21 15:21:42 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 15:21:42 -0700
+
+
+Started POST "/graphql" for ::1 at 2016-02-21 15:21:43 -0700
+Processing by GraphqlController#query as */*
+  Parameters: {"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}, "graphql"=>{"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}}}
+Completed 200 OK in 37ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-21 15:21:46 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/d3Style.self-2623ec4ad8429a3a7b1ba00fe81a47fc9259f4aa9a89d69b1ab0ddddcdbc5622.css?body=1" for ::1 at 2016-02-21 15:21:46 -0700
+
+
+Started GET "/assets/graphiql.self-bdbfd83e6a7cc99084a3db1122f10be8eeef78d62ed0db60be811e36cb94dfe2.css?body=1" for ::1 at 2016-02-21 15:21:46 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 15:21:46 -0700
+
+
+Started GET "/assets/application.self-1dcd4b812f102ff73e873ea6dad8066c6bc38feafdad0dac7753dd2e8a50a44d.js?body=1" for ::1 at 2016-02-21 15:21:46 -0700
+
+
+Started GET "/assets/application.self-1aa0c746cf994afedb7d74d35856f85fac369f04715693786dd619fcfe6c8431.css?body=1" for ::1 at 2016-02-21 15:21:46 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 15:21:46 -0700
+
+
+Started POST "/graphql" for ::1 at 2016-02-21 15:21:47 -0700
+Processing by GraphqlController#query as */*
+  Parameters: {"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}, "graphql"=>{"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}}}
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-21 15:24:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1198ms (Views: 1198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/d3Style.self-2623ec4ad8429a3a7b1ba00fe81a47fc9259f4aa9a89d69b1ab0ddddcdbc5622.css?body=1" for ::1 at 2016-02-21 15:24:23 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 15:24:23 -0700
+
+
+Started GET "/assets/application.self-1aa0c746cf994afedb7d74d35856f85fac369f04715693786dd619fcfe6c8431.css?body=1" for ::1 at 2016-02-21 15:24:23 -0700
+
+
+Started GET "/assets/application.self-1dcd4b812f102ff73e873ea6dad8066c6bc38feafdad0dac7753dd2e8a50a44d.js?body=1" for ::1 at 2016-02-21 15:24:23 -0700
+
+
+Started GET "/assets/style.self-8c23a3d5b5c2e6967df6b86fa70c829817f4d2011a4910cfcd123c8126dc293e.css?body=1" for ::1 at 2016-02-21 15:24:23 -0700
+
+
+Started GET "/assets/graphiql.self-bdbfd83e6a7cc99084a3db1122f10be8eeef78d62ed0db60be811e36cb94dfe2.css?body=1" for ::1 at 2016-02-21 15:24:23 -0700
+
+
+Started POST "/graphql" for ::1 at 2016-02-21 15:24:24 -0700
+Processing by GraphqlController#query as */*
+  Parameters: {"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}, "graphql"=>{"query"=>"query Relay_query{relay{...F2}} fragment F0 on Team{id,name} fragment F1 on Query{_teamsGkI8G:teams(first:3){edges{node{id,...F0},cursor},pageInfo{hasNextPage,hasPreviousPage}}} fragment F2 on Query{...F1}", "variables"=>{}}}
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms)

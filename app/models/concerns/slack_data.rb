@@ -13,10 +13,9 @@ module SlackData
       define_method :slack_data do
         fresh = slack_data_updated_at && slack_data_updated_at > refresh_in.ago
         fresh && read_attribute(:slack_data) || begin
-          update_columns(
-            slack_data_updated_at: Time.now,
-            slack_data:            instance_exec(SlackData.connection, &block)
-          )
+          self.slack_data_updated_at = Time.now
+          self.slack_data            = instance_exec(SlackData.connection, &block)
+          save unless new_record?
           read_attribute(:slack_data)
         end
       end

@@ -21,4 +21,6 @@ BotApi.define_resource :channels do
     update_instance context
   end
 
+  list only_associated: true
+
 end

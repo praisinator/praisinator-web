@@ -19,4 +19,6 @@ BotApi.define_resource :messages do
     update_instance context
   end
 
+  list only_associated: true
+
 end

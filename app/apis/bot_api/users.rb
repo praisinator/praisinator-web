@@ -14,4 +14,6 @@ BotApi.define_resource :users do
   relates_to_one :team, resource: :teams
   relates_to_many :messages
 
+  list only_associated: true
+
 end

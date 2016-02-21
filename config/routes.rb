@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   post '/slash' => 'slash_commands#create'
   post '/graphql' => 'graphql#query'
   # get '/*path'  => 'application#index'
-
+  get '/*path'  => 'home#index'
 end

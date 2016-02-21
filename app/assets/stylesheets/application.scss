@@ -208,16 +208,38 @@ $blue: #017AB5;
   background: #F1F1F2;
   font-weight: 600;
   text-transform: uppercase;
-    &:focus:active {
-      outline: none;
-    }
-    &:hover {
-      color: $gray;
-      background: $pink;
-      box-shadow: none;
-      border: 6px solid $pink;
-    }
+  &:focus:active {
+    outline: none;
   }
+  &:hover {
+    color: $gray;
+    background: $pink;
+    box-shadow: none;
+    border: 6px solid $pink;
+  }
+}
+
+.time-buttons {
+  width: 100%;
+  .btn {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .open > .dropdown-menu {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: $pink;
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .btn-group.open .dropdown-toggle {
+    margin-bottom: 0px;
+    box-shadow: none;
+  }
+}
+
 footer {
   position: fixed;
   bottom: 0;

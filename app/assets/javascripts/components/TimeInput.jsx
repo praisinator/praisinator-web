@@ -7,17 +7,19 @@ class TimeInput extends React.Component {
   constructor(props, context) {
         super(props, context);
         this.label= props.label;
+        this.i = props.i;
 
     }
+
   render() {
     return (
-    <DropdownButton title={this.label}>
-      <MenuItem href="#books">Books</MenuItem>
-      <MenuItem href="#podcasts">Podcasts</MenuItem>
-      <MenuItem href="#">Tech I Like</MenuItem>
-      <MenuItem href="#">About me</MenuItem>
-      <MenuItem href="#addBlog">Add a Blog</MenuItem>
-    </DropdownButton>
+      <DropdownButton bsStyle={title.toLowerCase()} title={title} key={i} id={`dropdown-basic-${i}`}>
+     <MenuItem eventKey="1">Action</MenuItem>
+     <MenuItem eventKey="2">Another action</MenuItem>
+     <MenuItem eventKey="3" active>Active Item</MenuItem>
+     <MenuItem divider />
+     <MenuItem eventKey="4">Separated link</MenuItem>
+   </DropdownButton>
     );
   }
 }

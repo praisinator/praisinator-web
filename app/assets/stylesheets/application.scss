@@ -15,7 +15,7 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
-
+ @import "./d3Style.scss";
 
 
 $pink: #777777;
@@ -52,16 +52,14 @@ $blue: #017AB5;
 #root {
   height: 100%;
   min-height: 100%;
-  overflow: hidden;
 }
 
 .container-fluid {
   padding: 0;
-  height: 100%;
-  min-height: 100%;
   border-top: none;
   background-color: $gray;
-  overflow: hidden;
+  height: 100%;
+  min-height: 100%;
 }
 
 .navbar-default {
@@ -76,7 +74,6 @@ $blue: #017AB5;
 
 .navbar-brand {
   display: inline-block;
-  overflow: hidden;
   padding: 5px 0;
 }
 
@@ -96,10 +93,8 @@ $blue: #017AB5;
 }
 
 .main-container {
-  overflow: scroll;
-    height: 100%;
     display: block;
-    margin-top: 50px;
+    margin: 50px 20px;
 }
 .drawer {
   z-index: 75;
@@ -110,7 +105,6 @@ $blue: #017AB5;
   right: 20px;
   bottom: 100%;
   top: 0;
-  overflow: scroll;
   transition: all 0.5s ease-out;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -143,8 +137,8 @@ $blue: #017AB5;
       &:before, &:after {
         cursor: pointer;
         border-radius: 1px;
-        height: 4px;
-        width: 25px;
+        height: 2px;
+        width: 20px;
         background: $pink;
         position: absolute;
         display: block;
@@ -262,9 +256,8 @@ $blue: #017AB5;
 // }
 footer {
   height: 20px;
-  background-color: $pink;
   text-align: center;
-  color: $gray;
+  color: $pink;
   font-weight: 300;
 }
 

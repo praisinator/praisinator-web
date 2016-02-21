@@ -27,13 +27,7 @@ class Header extends React.Component {
     }
   };
   renderTeams() {
-    return (
-    <span>
-      <TeamLink toggleDrawer={this.toggleDrawer}/>
-      <TeamLink toggleDrawer={this.toggleDrawer}/>
-      <TeamLink toggleDrawer={this.toggleDrawer}/>
-    </span>
-    )
+    return root.teams.edges.map(({node}) => <TeamLink key={node.id} team={team}/>);
   }
     render() {
       var drawer = classNames({
@@ -73,4 +67,20 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default Relay.createContainer(Header, {
+    fragments: {
+        relay: () => Relay.QL`
+            fragment on Relay {
+                id,
+                teams(first: 10) {
+                    edges {
+                        node {
+                            id,
+                            ${Team.getFragment('team')}
+                        }
+                    }
+                }
+            }
+        `
+    }
+});

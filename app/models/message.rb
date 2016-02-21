@@ -3,7 +3,15 @@ class Message < ActiveRecord::Base
   belongs_to :channel
   belongs_to :user
 
+  after_create :process_tone
+
   def user_slack_id=(value)
     self.user = User.find_or_initialize_by(slack_id: value)
+  end
+
+  private
+
+  def process_tone
+    ToneAnalyzerJob.perform_later(self)
   end
 end

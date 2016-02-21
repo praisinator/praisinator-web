@@ -11,6 +11,7 @@ ToneType = GraphQL::ObjectType.define do
   field :emotiona_disgust, !types.Float
   field :emotional_fear, !types.Float
   field :emotional_sadness, !types.Float
+  field :emotional_joy, !types.Float
   field :writing_analytical, !types.Float
   field :writing_confident, !types.Float
   field :writing_tentative, !types.Float

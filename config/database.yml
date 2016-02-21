@@ -10,5 +10,5 @@ test:
   database: 'praisinator-web_test'
 
 production:
-  url: <%= CFENV.dig('praisinator-postgresql', 'uri') %>
+  url: <%= ENV['DATABASE_URL'] || CFENV.dig('praisinator-postgresql', 'uri') %>
 

@@ -1,10 +1,11 @@
 class CreateTones < ActiveRecord::Migration
   def change
-    create_table :tones do |t|
+    create_table :tones, force: true do |t|
       t.belongs_to :message, index: true, foreign_key: { on_delete: :cascade }, null: false
       t.float :emotional_anger
-      t.float :emotiona_disgust
+      t.float :emotional_disgust
       t.float :emotional_fear
+      t.float :emotional_joy
       t.float :emotional_sadness
       t.float :writing_analytical
       t.float :writing_confident

@@ -42,3 +42,4 @@ build/
 .rvmrc
 .idea/*
 log/development.log
+app/assets/javascripts/graphql/schema.json

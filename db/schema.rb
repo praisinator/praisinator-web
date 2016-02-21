@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221021048) do
+ActiveRecord::Schema.define(version: 20160221075834) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "channels", force: :cascade do |t|
     t.integer  "team_id",    null: false
-    t.string   "slack_id"
+    t.string   "slack_id",   null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160221021048) do
     t.integer  "user_id",    null: false
     t.string   "slack_id"
     t.float    "timestamp"
-    t.text     "content"
+    t.text     "content",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20160221021048) do
   add_index "messages", ["user_id"], name: "index_messages_on_user_id", using: :btree
 
   create_table "teams", force: :cascade do |t|
-    t.string   "slack_id"
+    t.string   "slack_id",                       null: false
     t.string   "name"
     t.string   "slack_bot_id"
     t.string   "logo_url"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20160221021048) do
     t.float    "social_neuroticism"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.float    "emotional_joy"
   end
 
   add_index "tones", ["message_id"], name: "index_tones_on_message_id", using: :btree
@@ -82,7 +83,7 @@ ActiveRecord::Schema.define(version: 20160221021048) do
 
   create_table "users", force: :cascade do |t|
     t.integer  "team_id",      null: false
-    t.string   "slack_id"
+    t.string   "slack_id",     null: false
     t.string   "access_token"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false

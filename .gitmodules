@@ -1,3 +1,3 @@
 [submodule "services"]
 	path = services
-	url = git@github.com:brandfolder/services.git
+	url = https://github.com/brandfolder/services.git

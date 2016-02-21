@@ -10,8 +10,6 @@ class Message < ActiveRecord::Base
     self.user = User.find_or_initialize_by(slack_id: value, team_id: channel.team_id)
   end
 
-  private
-
   def process_tone
     ToneAnalyzerJob.perform_later(self)
   end

@@ -114,7 +114,8 @@ $blue: #017AB5;
     cursor: pointer;
   }
   &:before {
-    content: "Teams";
+    content: "teams";
+    letter-spacing: 0.5em;
   }
   &.open {
     &:before {

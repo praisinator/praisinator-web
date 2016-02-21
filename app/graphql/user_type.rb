@@ -1,4 +1,4 @@
-UserFeedbackType = GraphQL::ObjectType.define do
+UserType = GraphQL::ObjectType.define do
   name "UserFeedback"
 
   interfaces [NodeIdentification.interface]

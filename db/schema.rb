@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160220224440) do
+ActiveRecord::Schema.define(version: 20160220230554) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -69,6 +69,14 @@ ActiveRecord::Schema.define(version: 20160220224440) do
 
   add_index "tones", ["message_id"], name: "index_tones_on_message_id", using: :btree
 
+  create_table "user_feedbacks", force: :cascade do |t|
+    t.integer  "issuing_user_id", null: false
+    t.integer  "issued_user_id",  null: false
+    t.boolean  "positive",        null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.integer  "team_id",      null: false
     t.string   "slack_id"
@@ -83,5 +91,7 @@ ActiveRecord::Schema.define(version: 20160220224440) do
   add_foreign_key "messages", "channels", on_delete: :cascade
   add_foreign_key "messages", "users", on_delete: :cascade
   add_foreign_key "tones", "messages", on_delete: :cascade
+  add_foreign_key "user_feedbacks", "users", column: "issued_user_id", on_delete: :cascade
+  add_foreign_key "user_feedbacks", "users", column: "issuing_user_id", on_delete: :cascade
   add_foreign_key "users", "teams", on_delete: :cascade
 end

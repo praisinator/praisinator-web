@@ -25,7 +25,7 @@ class Header extends React.Component {
     } else {
       this.setState({drawerOpen: true})
     }
-  }
+  };
   renderTeams() {
     console.log('in here');
     return (

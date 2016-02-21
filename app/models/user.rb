@@ -1,4 +1,9 @@
 class User < ActiveRecord::Base
+  include OverallFeedback
+  include SlackData
+
+  store_accessor :slack_data, :name
+
   belongs_to :team
   has_many :messages
   has_many :tones, through: :messages
@@ -6,10 +11,11 @@ class User < ActiveRecord::Base
   has_many :issued_feedbacks, class_name: 'UserFeedback', as: :issued_user
   has_many :issuing_feedbacks, class_name: 'UserFeedback', as: :issuing_user
 
-  def overall_feedback
-    # Todo: Take this from feedback
-    pos = rand(0..100)
-    neg = rand(0..100)
-    pos - neg
+  slack_data(refresh_in: 1.day) do |connection|
+    params = {
+      token: team.slack_bot_token,
+      user:  slack_id
+    }
+    connection.get('/api/users.info?' + params.to_param).body['user']
   end
 end

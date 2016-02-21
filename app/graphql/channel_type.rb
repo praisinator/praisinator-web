@@ -4,6 +4,21 @@ ChannelType = GraphQL::ObjectType.define do
   interfaces [NodeIdentification.interface]
   global_id_field :id
 
+  field :name, !types.String
+  field :overall_feedback, !types.Int
+
+  field :feedback_count, !types.Int  do
+    resolve ->(channel, *){
+      channel.issued_feedbacks.count
+    }
+  end
+
+  field :message_count, !types.Int  do
+    resolve ->(channel, *){
+      channel.messages.count
+    }
+  end
+
   field :tone, -> { ToneType } do
     resolve ->(channel, *) {
       channel.tones.composite

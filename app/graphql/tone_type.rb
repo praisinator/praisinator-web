@@ -8,7 +8,7 @@ ToneType = GraphQL::ObjectType.define do
   field :user, -> { UserType }
 
   field :emotional_anger, !types.Float
-  field :emotiona_disgust, !types.Float
+  field :emotional_disgust, !types.Float
   field :emotional_fear, !types.Float
   field :emotional_sadness, !types.Float
   field :emotional_joy, !types.Float

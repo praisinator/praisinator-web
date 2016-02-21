@@ -1,2 +1,2 @@
 web: rake db:migrate && rails s -p $PORT
-worker: sidekiq
+worker: sidekiq -c $SIDEKIQ_CONCURRENCY

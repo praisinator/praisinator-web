@@ -5,6 +5,10 @@ class BotApi < JSONAPIonify::Api::Base
   rescue_from ActiveRecord::RecordNotFound, error: :not_found
   rescue_from ActiveRecord::RecordInvalid, error: :unprocessable_entity
 
+  on_exception do |exception|
+    puts exception.message, *exception.backtrace
+  end
+
   # Resource Helpers
   helper :update_instance do |context|
     unless context.instance.update context.request_attributes

@@ -12,8 +12,12 @@ BotApi.define_resource :channels do
 
   relates_to_one :team, resource: :teams
   relates_to_many :messages do
+    new_instance do |scope, context|
+      scope.new channel: context.owner, **context.request_attributes
+    end
+
     create do |context|
-      update_instance context
+      create_instance context
     end
   end
 

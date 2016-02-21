@@ -11,43 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221075834) do
+ActiveRecord::Schema.define(version: 20160221202048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "channels", force: :cascade do |t|
-    t.integer  "team_id",    null: false
-    t.string   "slack_id",   null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "team_id",               null: false
+    t.string   "slack_id",              null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.jsonb    "slack_data"
+    t.datetime "slack_data_updated_at"
   end
 
   add_index "channels", ["slack_id"], name: "index_channels_on_slack_id", unique: true, using: :btree
   add_index "channels", ["team_id"], name: "index_channels_on_team_id", using: :btree
 
   create_table "messages", force: :cascade do |t|
-    t.integer  "channel_id", null: false
-    t.integer  "user_id",    null: false
-    t.string   "slack_id"
-    t.float    "timestamp"
-    t.text     "content",    null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "channel_id", null: false
+    t.integer "user_id",    null: false
+    t.text    "content",    null: false
+    t.float   "timestamp"
   end
 
   add_index "messages", ["channel_id"], name: "index_messages_on_channel_id", using: :btree
   add_index "messages", ["user_id"], name: "index_messages_on_user_id", using: :btree
 
   create_table "teams", force: :cascade do |t|
-    t.string   "slack_id",                       null: false
-    t.string   "name"
-    t.string   "slack_bot_id"
+    t.string   "slack_id",                             null: false
+    t.string   "slack_bot_id",                         null: false
     t.string   "logo_url"
-    t.string   "slack_bot_token"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.boolean  "active",          default: true
+    t.string   "slack_bot_token",                      null: false
+    t.boolean  "active",                default: true
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+    t.jsonb    "slack_data"
+    t.datetime "slack_data_updated_at"
   end
 
   add_index "teams", ["slack_id"], name: "index_teams_on_slack_id", unique: true, using: :btree
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20160221075834) do
     t.float    "emotional_anger"
     t.float    "emotional_disgust"
     t.float    "emotional_fear"
+    t.float    "emotional_joy"
     t.float    "emotional_sadness"
     t.float    "writing_analytical"
     t.float    "writing_confident"
@@ -68,7 +69,6 @@ ActiveRecord::Schema.define(version: 20160221075834) do
     t.float    "social_neuroticism"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
-    t.float    "emotional_joy"
   end
 
   add_index "tones", ["message_id"], name: "index_tones_on_message_id", using: :btree
@@ -81,12 +81,17 @@ ActiveRecord::Schema.define(version: 20160221075834) do
     t.datetime "updated_at",      null: false
   end
 
+  add_index "user_feedbacks", ["issued_user_id"], name: "index_user_feedbacks_on_issued_user_id", using: :btree
+  add_index "user_feedbacks", ["issuing_user_id"], name: "index_user_feedbacks_on_issuing_user_id", using: :btree
+
   create_table "users", force: :cascade do |t|
-    t.integer  "team_id",      null: false
-    t.string   "slack_id",     null: false
+    t.integer  "team_id",               null: false
+    t.string   "slack_id",              null: false
     t.string   "access_token"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.jsonb    "slack_data"
+    t.datetime "slack_data_updated_at"
   end
 
   add_index "users", ["slack_id"], name: "index_users_on_slack_id", unique: true, using: :btree

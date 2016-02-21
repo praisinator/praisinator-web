@@ -30,11 +30,11 @@ class ToneAnalyzerJob < ActiveJob::Base
   private
 
   def connection
-    @connection ||= Faraday.new(url: config.host) do |faraday|
-      faraday.basic_auth config.username, config.password
-      faraday.request :json
-      faraday.response :json
-      faraday.adapter Faraday.default_adapter
+    @connection ||= Faraday.new(url: config.host) do |conn|
+      conn.basic_auth config.username, config.password
+      conn.request :json
+      conn.response :json
+      conn.adapter Faraday.default_adapter
     end
   end
 

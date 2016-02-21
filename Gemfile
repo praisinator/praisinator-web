@@ -17,7 +17,7 @@ gem 'react-rails'
 
 # API Stuff
 gem 'jsonapionify', github: 'brandfolder/jsonapionify'
-gem 'graphql'
+gem 'graphql-relay'
 
 # Tools
 gem 'pry-rails'

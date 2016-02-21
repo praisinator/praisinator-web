@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160220230554) do
+ActiveRecord::Schema.define(version: 20160221021048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20160220230554) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "channels", ["slack_id"], name: "index_channels_on_slack_id", unique: true, using: :btree
   add_index "channels", ["team_id"], name: "index_channels_on_team_id", using: :btree
 
   create_table "messages", force: :cascade do |t|
@@ -49,10 +50,12 @@ ActiveRecord::Schema.define(version: 20160220230554) do
     t.boolean  "active",          default: true
   end
 
+  add_index "teams", ["slack_id"], name: "index_teams_on_slack_id", unique: true, using: :btree
+
   create_table "tones", force: :cascade do |t|
     t.integer  "message_id",               null: false
     t.float    "emotional_anger"
-    t.float    "emotiona_disgust"
+    t.float    "emotional_disgust"
     t.float    "emotional_fear"
     t.float    "emotional_sadness"
     t.float    "writing_analytical"
@@ -85,6 +88,7 @@ ActiveRecord::Schema.define(version: 20160220230554) do
     t.datetime "updated_at",   null: false
   end
 
+  add_index "users", ["slack_id"], name: "index_users_on_slack_id", unique: true, using: :btree
   add_index "users", ["team_id"], name: "index_users_on_team_id", using: :btree
 
   add_foreign_key "channels", "teams", on_delete: :cascade

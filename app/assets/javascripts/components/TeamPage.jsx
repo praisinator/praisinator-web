@@ -28,7 +28,7 @@ class TeamPage extends React.Component {
         return (
             <Grid className="team-page">
                 <Row>
-                    <Col md={4} sm={4}>
+                    <Col md={2} sm={2}>
                         <div className='team-wrapper'>
                             <div className="team-logo">
                                 <img src={this.props.team.logo_url}/>
@@ -37,13 +37,11 @@ class TeamPage extends React.Component {
                                 {this.props.team.name}
                             </div>
                         </div>
-                        <Row>
-                            <Col md={4} sm={4}>
-                                {this.renderChannelLinks()}
-                            </Col>
-                        </Row>
+                        <Col md={12} sm={12}>
+                            {this.renderChannelLinks()}
+                        </Col>
                     </Col>
-                    <Col md={8} sm={8}>
+                    <Col md={10} sm={10}>
                         <Row>
                             {this.renderTimeInputContainer()}
                         </Row>

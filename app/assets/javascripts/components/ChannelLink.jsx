@@ -5,16 +5,22 @@ import { Link } from 'react-router';
 import Button from 'react-bootstrap/lib/Button';
 
 class ChannelLink extends React.Component {
-  constructor(props, context) {
-      super(props, context);
-    }
   render() {
     return (
       <Link to={'/channel'}>
-        <Button className="channel-link"> Channel Name </Button>
+        <Button className="channel-link"> {this.props.channel.name} </Button>
       </Link>
     );
   }
 }
 
-export default ChannelLink;
+export default Relay.createContainer(ChannelLink, {
+    fragments: {
+        channel: () => Relay.QL`
+          fragment on Channel {
+            id,
+            name
+          }
+        `
+    }
+});

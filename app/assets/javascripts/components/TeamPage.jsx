@@ -10,14 +10,7 @@ import ChartWrapper from './ChartWrapper';
 
 class TeamPage extends React.Component {
   renderChannelLinks() {
-    return  (
-      <span>
-        <ChannelLink/>
-        <ChannelLink/>
-        <ChannelLink/>
-        <ChannelLink/>
-      </span>
-    )
+    return this.props.team.channels.edges.map(({node}) => <ChannelLink key={node.id} channel={node}/>);
   }
 
   renderTimeInputContainer() {
@@ -26,9 +19,7 @@ class TeamPage extends React.Component {
 
   renderCharts() {
     return (
-      <ChartWrapper>
-        {/*{this.props.children}*/}
-      </ChartWrapper>
+      <ChartWrapper tones={this.team.tones} />
     )
   }
   render() {
@@ -41,7 +32,7 @@ class TeamPage extends React.Component {
                 <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/espenhovlandsdal/images/566501/react-logo-colored.png"/>
               </div>
               <div className="team-name">
-                Team Name
+                {this.props.team.name}
               </div>
             </div>
             <Row>
@@ -69,8 +60,16 @@ export default Relay.createContainer(TeamPage, {
         team: () => Relay.QL`
             fragment on Team {
                 id,
-                name
-
+                name,
+                ${ChartWrapper.getFragment(tones)}
+                channels(first: 10) {
+                  edges {
+                    node {
+                      id
+                      ${ChannelLink.getFragment('channel')}
+                    }
+                  }
+                }
             }
         `
     }

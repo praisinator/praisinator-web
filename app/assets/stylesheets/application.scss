@@ -295,6 +295,7 @@ h3 {
 }
 
 .time-buttons {
+  display: none;
   width: 100%;
   .btn-group {
     width: 100%;
@@ -321,7 +322,13 @@ h3 {
 }
 
 .chart-wrapper {
+  text-align: center;
   margin-top: 50px;
+  h4 {
+    color: $pink;
+    font-weight: 400;
+    padding-bottom: 0;
+  }
 }
 // .wordmark {
 //   background-image: url("praisonator_wordmark.svg");

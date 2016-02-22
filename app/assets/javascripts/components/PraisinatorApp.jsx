@@ -16,7 +16,7 @@ class PraisinatorApp extends React.Component {
           </div>
         <footer className="info">
           <Grid>
-            <div className="left"> <Link to="https://github.com/praisinator/praisinator-web">github.com/praisinator/praisinator-web </Link></div>
+            <div className="left"> <a href="https://github.com/praisinator/praisinator-web">github.com/praisinator/praisinator-web </a></div>
             <div className="right">  Made with <i className="fa fa-heart"></i> in Denver, CO</div>
           </Grid>
         </footer>

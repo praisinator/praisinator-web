@@ -43,7 +43,7 @@ class Header extends React.Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <IndexLink to="/"><div id="logo"/></IndexLink>
+              <IndexLink to="/"><div id="logo" className="left"/><div className="text-link left">PRAISINATOR</div></IndexLink>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav onClick={this.toggleDrawer}>

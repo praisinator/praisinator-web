@@ -1,6 +1,7 @@
 import React from 'react';
 import Relay from 'react-relay';
 import Grid from 'react-bootstrap/lib/Grid';
+import {Link} from 'react-router';
 
 import Header from './Header';
 
@@ -14,7 +15,10 @@ class PraisinatorApp extends React.Component {
             {this.props.children}
           </div>
         <footer className="info">
-          <Grid> WithOurPowersCombined </Grid>
+          <Grid>
+            <div className="left"> <Link to="https://github.com/praisinator/praisinator-web">github.com/praisinator/praisinator-web </Link></div>
+            <div className="right">  Made with <i className="fa fa-heart"></i> in Denver, CO</div>
+          </Grid>
         </footer>
       </Grid>
     );

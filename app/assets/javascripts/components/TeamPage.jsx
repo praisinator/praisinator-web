@@ -32,7 +32,7 @@ class TeamPage extends React.Component {
     // if (this.props.children){
     //   return this.props.children
     // } else {
-      return <ChartWrapper emotional={tone} writing={tone} social={tone} />
+      return <ChartWrapper emotional={tone} writing={tone} social={tone} key={this.state.team.id}/>
     // }
 
   }

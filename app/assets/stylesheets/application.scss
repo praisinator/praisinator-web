@@ -41,9 +41,10 @@ $blue: #017AB5;
     color: $pink;
     font-weight: 200;
     text-transform: capitalize;
-  }
-  .btn {
-    float: right;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-size: 50px;
   }
 }
 
@@ -53,6 +54,7 @@ p {
   width: 50%;
   padding: 20px 0;
   line-height: 20px;
+  text-align: justify;
 }
  h1, h2, h3, h4 {
   font-weight: 200;
@@ -80,6 +82,14 @@ h3 {
   min-height: 100%;
 }
 
+.btn-toolbar {
+  text-align: center;
+  width: 420px;
+  margin: 0 auto;
+  .btn {
+    margin: 5px;
+  }
+}
 .sub-text {
   padding-top: 70px;
   p {
@@ -88,10 +98,6 @@ h3 {
     margin: 0 auto;
     text-align: justify;
   }
-}
-.slack-link {
-  width: 141px;
-  margin: 0 auto;
 }
 .slack-logo {
   width: 100px;
@@ -332,12 +338,31 @@ svg.chart {
 .star-title {
   font-size: 22px;
 }
-
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 footer {
   height: 20px;
   text-align: center;
   color: $pink;
   font-weight: 300;
+  border-top: 2px solid $pink;
+  margin: 0px 20px;
+  padding: 10px 0;
+  .fa {
+    font-size: 10px;
+  }
+  a {
+    color: $pink;
+    text-decoration: none;
+    &:hover {
+      color: $pink;
+      text-decoration: none;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

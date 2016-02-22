@@ -27,10 +27,10 @@ ReactDOM.render((
                 path="console" component={Console}
             />
             <Route path="teams/:id" component={TeamPage} queries={TeamQuery}>
-
+                <Route path="channels/:id" component={ChannelPage} querires={ChannelQuery} />
             </Route>
 
-            <Route path="channels/:id" component={ChannelPage} querires={ChannelQuery} />
+
         </Route>
     </RelayRouter>
 ), document.getElementById('root'));

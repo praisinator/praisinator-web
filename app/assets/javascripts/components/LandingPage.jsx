@@ -4,6 +4,11 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Button from 'react-bootstrap/lib/Button';
+import ButtonToolbar from 'react-bootstrap/lib/ButtonToolbar';
+<ButtonToolbar>
+    <Button href="#">Link</Button>
+    <Button>Button</Button>
+  </ButtonToolbar>
 
 class LandingPage extends React.Component {
   render() {
@@ -18,9 +23,11 @@ class LandingPage extends React.Component {
           mood of your slack teams and channels. No more sleepless nights wondering what your
           team is feeling, are they happy, sad, angry, fearful...now it's right
           there in front of your face in an easy to see graph.
-            <Button className="channel-link"> Go To App </Button>
            </p>
-
+           <ButtonToolbar>
+             <Button href="/teams/VGVhbS0z"> See it in Action </Button>
+             <Button href="https://slack.com/oauth/authorize?scope=bot,commands,team%3Aread,users%3Aread,channels%3Aread,channels%3Ahistory&client_id=9094370912.22344990885"> Try it out for yourself </Button>
+           </ButtonToolbar>
         </Col>
       </Row>
       <Row className="sub-text">
@@ -32,11 +39,6 @@ class LandingPage extends React.Component {
       <p> With the help of apps like Slack, teams are communicating more than ever.
       Sharing ideas, frustrations, problem-solving, and just keeping morale high. Every time your team starts a conversation, our app starts tracking.
       So, we're there through all the conversation's ups and downs. </p>
-        <div className="slack-link">
-        <a href="https://slack.com/oauth/authorize?scope=bot,commands,team%3Aread,users%3Aread,channels%3Aread,channels%3Ahistory&client_id=9094370912.22344990885">
-          <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x "/>
-        </a>
-        </div>
       </Col>
       <Col md={4} sm={4}>
           <div className="slack-logo">

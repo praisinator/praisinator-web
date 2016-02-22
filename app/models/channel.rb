@@ -34,14 +34,13 @@ class Channel < ActiveRecord::Base
         message.user.slack_id == historical_message['user'] &&
           message.timestamp == historical_message['ts'] &&
           message.content == historical_message['text']
-      end || self.messages.new(
+      end || historical_message['user'] && self.messages.new(
         channel:   self,
         user:      team.users.find_or_create_by(slack_id: historical_message['user']),
         timestamp: historical_message['ts'],
         content:   historical_message['text']
       )
-    end
-
+    end.compact
     Message.import new_messages
     self.messages.reload.analyze_tone
   end

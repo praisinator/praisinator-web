@@ -43,5 +43,6 @@ class Channel < ActiveRecord::Base
     end
 
     Message.import new_messages
+    self.messages.reload.analyze_tone
   end
 end

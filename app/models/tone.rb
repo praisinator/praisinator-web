@@ -36,7 +36,7 @@ class Tone < ActiveRecord::Base
   def select_greatest_intent
     cols = %w{writing_analytical writing_confident writing_tentative}
     attrs = attributes.slice(*cols)
-    return if attrs.values.all?(&:zero?)
+    return attrs.keys.each { |attr| write_attribute attr, nil } if attrs.values.all?(&:zero?)
     *lesser, greatest = attrs.sort_by(&:last).to_h.keys
     lesser.each { |attr| write_attribute attr, 0.0 }
     write_attribute(greatest, 1.0)
@@ -45,7 +45,7 @@ class Tone < ActiveRecord::Base
   def select_greatest_emotion
     cols = %w{emotional_anger emotional_disgust emotional_fear emotional_joy emotional_sadness}
     attrs = attributes.slice(*cols)
-    return if attrs.values.all?(&:zero?)
+    return attrs.keys.each { |attr| write_attribute attr, nil } if attrs.values.all?(&:zero?)
     *lesser, greatest = attrs.sort_by(&:last).to_h.keys
     lesser.each { |attr| write_attribute attr, 0.0 }
     write_attribute(greatest, 1.0)
@@ -54,7 +54,7 @@ class Tone < ActiveRecord::Base
   def select_greatest_social
     cols = %w{social_openness social_conscientiousness social_extraversion social_agreeableness}
     attrs = attributes.slice(*cols)
-    return if attrs.values.all?(&:zero?)
+    return attrs.keys.each { |attr| write_attribute attr, nil } if attrs.values.all?(&:zero?)
     *lesser, greatest = attrs.sort_by(&:last).to_h.keys
     lesser.each { |attr| write_attribute attr, 0.0 }
     write_attribute(greatest, 1.0)

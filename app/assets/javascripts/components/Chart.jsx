@@ -12,6 +12,10 @@ class Chart extends React.Component {
         });
     }
 
+    getColor(i){
+        return ["#c6dbef","#9ecae1","#6baed6","#3182bd","#08519c"][i]
+    }
+
     render() {
         return (
             <PieChart
@@ -20,6 +24,8 @@ class Chart extends React.Component {
                 height={400}
                 radius={100}
                 innerRadius={20}
+                labelTextFill="black"
+                colors={this.getColor}
                 sectorBorderColor="black"
                 title={this.props.title}
             />

@@ -4,7 +4,6 @@ class Tone < ActiveRecord::Base
   def self.composite
     t = arel_table
     select(
-      '-1 AS id',
       t[:emotional_anger].average.as('emotional_anger'),
       t[:emotional_disgust].average.as('emotional_disgust'),
       t[:emotional_sadness].average.as('emotional_sadness'),

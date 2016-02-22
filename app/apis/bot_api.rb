@@ -1,4 +1,5 @@
 class BotApi < JSONAPIonify::Api::Base
+  use Skylight::Middleware
 
   self.verbose_errors = true
 

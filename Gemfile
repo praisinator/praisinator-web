@@ -25,6 +25,7 @@ gem 'graphql-relay'
 gem 'pry-rails'
 gem 'activerecord-import'
 gem 'sidekiq-failures'
+gem "skylight"
 
 group :production do
   gem 'rails_12factor'

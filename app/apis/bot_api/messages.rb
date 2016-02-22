@@ -17,4 +17,6 @@ BotApi.define_resource :messages do
 
   list only_associated: true
 
+  enable_pagination per: 10
+
 end

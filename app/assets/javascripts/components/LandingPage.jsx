@@ -23,25 +23,37 @@ class LandingPage extends React.Component {
 
         </Col>
       </Row>
-      <Row>
-        <Col md={6} sm={6}>
-          <div> Headline Text</div>
-        </Col>
-        <Col md={6} sm={6}>
-          <div> Video</div>
-        </Col>
-      </Row>
-      <Row>
+      <Row className="sub-text">
       <Col md={4} sm={4}>
-        <div> <a href="https://slack.com/oauth/authorize?scope=bot,commands,team%3Aread,users%3Aread,channels%3Aread,channels%3Ahistory&client_id=9094370912.22344990885">
-  <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x "/>
-</a></div>
+      <div className="slack-logo">
+        <i className="fa fa-slack"></i>
+      </div>
+      <h3>It starts with a message </h3>
+      <p> With the help of apps like Slack, teams are communicating more than ever.
+      Sharing ideas, frustrations, problem-solving, and just keeping morale high. Every time your team starts a conversation, our app starts tracking.
+      So, we're there through all the conversation's ups and downs. </p>
+        <div className="slack-link">
+        <a href="https://slack.com/oauth/authorize?scope=bot,commands,team%3Aread,users%3Aread,channels%3Aread,channels%3Ahistory&client_id=9094370912.22344990885">
+          <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x "/>
+        </a>
+        </div>
       </Col>
       <Col md={4} sm={4}>
-        <div> Video</div>
+          <div className="slack-logo">
+            <i className="fa fa-smile-o"></i>
+          </div>
+            <h3>It captures a mood </h3>
+          <p> With the help of apps like Slack, teams are communicating more than ever.
+          Sharing ideas, frustrations, problem-solving, and just keeping morale high. Every time your team starts a conversation, our app starts tracking.
+          So, we're there through all the conversation's ups and downs. </p>
       </Col>
       <Col md={4} sm={4}>
-        <div> Video</div>
+        <div className="slack-logo">
+          <i className="fa fa-pie-chart"></i>
+        </div>
+        <h3> It tells a story  </h3>
+        <p> When you can see the emotions, sentiment, and attitudes you can delve
+        into the day, week or hour of your teams experiences. Become an analytical master of mood, and uncover the feelings and state of mind that tells the story of a teams life together. </p>
       </Col>
       </Row>
     </Grid>

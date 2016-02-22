@@ -65,6 +65,12 @@ p {
 h2 {
   padding: 30px;
 }
+h3 {
+  font-size: 22px;
+  color: $pink;
+  text-align: center;
+  padding-bottom: 0;
+}
 -webkit-scrollbar {
     background-color: $pink;
 }
@@ -72,6 +78,28 @@ h2 {
 #root {
   height: 100%;
   min-height: 100%;
+}
+
+.sub-text {
+  padding-top: 70px;
+  p {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+.slack-link {
+  width: 141px;
+  margin: 0 auto;
+}
+.slack-logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.fa {
+  font-size: 100px;
+
 }
 
 .container-fluid {
@@ -184,7 +212,6 @@ h2 {
     }
   }
 }
-
 .team-link-container {
   padding: 20px 0;
   text-align: center;

@@ -9,9 +9,12 @@ import TimeInputContainer from './TimeInputContainer';
 import ChartWrapper from './ChartWrapper';
 
 class TeamPage extends React.Component {
-  getInitialState() {
-    return { team: this.props.team }
-  }
+  constructor(props, context) {
+    super(props, context);
+      this.state = {
+        team: this.props.team
+      };
+    }
   renderChannelLinks() {
     var teamId = this.props.team.id;
     return this.props.team.channels.edges.map(({node}) => <ChannelLink key={node.id} channel={node} teamId={teamId}/>);

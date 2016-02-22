@@ -21,12 +21,12 @@ class SlashCommandsController < ApplicationController
       issuer            = User.find_by(slack_id: issuer_user_id)
       recipient         = User.find_by(slack_id: recipient_user_id)
       if issuer.present? && recipient.present?
-        positive          = params[:command] == '/praise' ? true : false
+        positive = params[:command] == '/praise' ? true : false
         UserFeedback.create(issuing_user: issuer, issued_user: recipient, positive: positive)
       end
     end
 
-    return head :no_content
+    render json: { response_type: 'ephemeral', text: 'Thanks for submitting feedback!' }
   end
 
 end

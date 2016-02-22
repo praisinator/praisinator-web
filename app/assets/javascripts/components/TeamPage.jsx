@@ -24,6 +24,28 @@ class TeamPage extends React.Component {
         return <ChartWrapper key={this.props.team.id} emotional={tone} writing={tone} social={tone}/>
     }
 
+    renderTeam(){
+        return(
+            <Col md={10} sm={10}>
+                <Row>
+                    {this.renderTimeInputContainer()}
+                </Row>
+                <Row>
+                    {this.renderCharts()}
+                </Row>
+            </Col>
+        )
+    }
+
+    renderTeamOrChannel(){
+        var { children } = this.props;
+        if (children){
+            return children
+        } else {
+            return this.renderTeam()
+        }
+    }
+
     render() {
         return (
             <Grid className="team-page">
@@ -39,15 +61,7 @@ class TeamPage extends React.Component {
                               {this.renderChannelLinks()}
                         </div>
                     </Col>
-                    <Col md={10} sm={10}>
-                        <Row>
-                            {this.renderTimeInputContainer()}
-                            <h1> {this.props.team.name} Mood </h1>
-                        </Row>
-                        <Row>
-                            {this.renderCharts()}
-                        </Row>
-                    </Col>
+                    {this.renderTeamOrChannel()}
                 </Row>
             </Grid>
         );

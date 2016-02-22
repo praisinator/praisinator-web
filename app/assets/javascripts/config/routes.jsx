@@ -18,8 +18,13 @@ ReactDOM.render((
         <Route path="/" component={PraisinatorApp} queries={RootQuery}>
             <IndexRoute component={LandingPage}/>
             <Route path="console" component={Console}/>
+<<<<<<< HEAD
             <Route path="teams/:id" component={TeamPage} queries={TeamQuery}>
               <Route path="channels/:id" component={ChannelPage} queries={ChannelQuery} />
+=======
+            <Route path="teams/:teamId" component={TeamPage} queries={TeamQuery}>
+                <Route path="channels/:channelId" component={ChannelPage} queries={ChannelQuery} />
+>>>>>>> 5692b23d7d2c89dfae0e86da5648d1efe1a5ea5a
             </Route>
         </Route>
     </RelayRouter>

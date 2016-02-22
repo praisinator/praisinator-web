@@ -128,10 +128,14 @@ h3 {
 }
 
 .navbar-brand {
-  display: inline-block;
+  display: block;
+  overflow: hidden;
   padding: 5px 0;
 }
-
+.text-link {
+  display: inline-block;
+  padding: 15px 0 0 0;
+}
 .navbar-nav {
   float: right;
   padding: 25px 0px 0px 0px;

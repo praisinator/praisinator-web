@@ -21,7 +21,7 @@ class Channel < ActiveRecord::Base
   end
 
   def import
-    ChannelImportJob.perform_later
+    ChannelImportJob.perform_later self
   end
 
   def import_messages

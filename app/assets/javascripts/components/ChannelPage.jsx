@@ -3,21 +3,29 @@ import Relay from 'react-relay';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-
+import TimeInputContainer from './TimeInputContainer';
 import ChartWrapper from './ChartWrapper';
 
 class ChannelPage extends React.Component {
-  // renderCharts() {
-  //   var { tone } = this.props.channel
-  //   return <ChartWrapper emotional={tone} writing={tone} social={tone} />
-  // }
-  render() {
-    debugger;
-    let {channel} = this.props
-    return (
-      <div> Test </div>
-    );
-  }
+
+    renderTimeInputContainer() {
+        return <TimeInputContainer/>
+    }
+
+    render() {
+        let { channel } = this.props;
+        let { tone } = channel;
+        return (
+        <Col md={10} sm={10}>
+            <Row>
+                {this.renderTimeInputContainer()}
+            </Row>
+            <Row>
+                <ChartWrapper key={channel.id} emotional={tone} writing={tone} social={tone}/>
+            </Row>
+        </Col>
+        )
+    }
 }
 
 export default Relay.createContainer(ChannelPage, {
@@ -26,6 +34,11 @@ export default Relay.createContainer(ChannelPage, {
             fragment on Channel {
                 id,
                 name
+                tone {
+                  ${ChartWrapper.getFragment('emotional')}
+                  ${ChartWrapper.getFragment('writing')}
+                  ${ChartWrapper.getFragment('social')}
+                },
             }
         `
     }

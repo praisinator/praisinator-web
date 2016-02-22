@@ -18,16 +18,11 @@ class TimeInputContainer extends React.Component {
   render() {
     return (
       <ButtonGroup className="time-buttons">
-        <Col md={6} sm={6}>
-          <DropdownButton title="Start time" id="bg-vertical-dropdown-2">
-            <MenuItem eventKey="1">Dropdown link</MenuItem>
-            <MenuItem eventKey="2">Dropdown link</MenuItem>
-          </DropdownButton>
-        </Col>
-        <Col md={6} sm={6}>
-         <DropdownButton title="End Time" id="bg-vertical-dropdown-3">
-          <MenuItem eventKey="1">Dropdown link</MenuItem>
-          <MenuItem eventKey="2">Dropdown link</MenuItem>
+        <Col md={12} sm={12}>
+         <DropdownButton title="Select Time Range" id="bg-vertical-dropdown-3">
+          <MenuItem eventKey="1">Last Hour</MenuItem>
+          <MenuItem eventKey="2">Last Day</MenuItem>
+          <MenuItem eventKey="2">Last Week</MenuItem>
         </DropdownButton>
         </Col>
       </ButtonGroup>

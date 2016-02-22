@@ -27,7 +27,7 @@ class Header extends React.Component {
     }
   };
   renderTeams() {
-    return this.props.root.teams.edges.map(({node}) => <TeamLink key={node.id} team={node}/>);
+    return this.props.root.teams.edges.map(({node}) => <TeamLink key={node.id} team={node} toggleDrawer={this.toggleDrawer.bind(this)}/>);
   }
     render() {
       var drawer = classNames({

@@ -12,7 +12,7 @@ class TeamLink extends React.Component {
       <Col md={4} className="team-link-container">
         <Link to={`/teams/${this.props.team.id}`}>
           <div className="team-logo" onClick={this.props.toggleDrawer}>
-            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/espenhovlandsdal/images/566501/react-logo-colored.png"/>
+            <img src={this.props.team.logo_url}/>
           </div>
           <div className="team-name">
             {this.props.team.name}
@@ -28,7 +28,8 @@ export default Relay.createContainer(TeamLink, {
         team: () => Relay.QL`
           fragment on Team {
             id,
-            name
+            name,
+            logo_url
           }
         `
     }

@@ -10,7 +10,8 @@ import ChartWrapper from './ChartWrapper';
 
 class TeamPage extends React.Component {
   renderChannelLinks() {
-    return this.props.team.channels.edges.map(({node}) => <ChannelLink key={node.id} channel={node}/>);
+    var teamId = this.props.team.id;
+    return this.props.team.channels.edges.map(({node}) => <ChannelLink key={node.id} channel={node} teamId={teamId}/>);
   }
 
   renderTimeInputContainer() {
@@ -18,9 +19,13 @@ class TeamPage extends React.Component {
   }
 
   renderCharts() {
-    return (
-      <ChartWrapper tones={this.team.tones} />
-    )
+    var { tone } = this.props.team
+    if (this.props.children){
+      return this.props.children
+    } else {
+          return <ChartWrapper emotional={tone} writing={tone} social={tone} />
+    }
+
   }
   render() {
     return (
@@ -29,7 +34,7 @@ class TeamPage extends React.Component {
           <Col md={4} sm={4}>
             <div className='team-wrapper'>
               <div className="team-logo">
-                <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/espenhovlandsdal/images/566501/react-logo-colored.png"/>
+                <img src={this.props.team.logo_url}/>
               </div>
               <div className="team-name">
                 {this.props.team.name}
@@ -61,7 +66,12 @@ export default Relay.createContainer(TeamPage, {
             fragment on Team {
                 id,
                 name,
-                ${ChartWrapper.getFragment(tones)}
+                logo_url,
+                tone {
+                  ${ChartWrapper.getFragment('emotional')}
+                  ${ChartWrapper.getFragment('writing')}
+                  ${ChartWrapper.getFragment('social')}
+                },
                 channels(first: 10) {
                   edges {
                     node {

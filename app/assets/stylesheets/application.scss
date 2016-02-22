@@ -58,7 +58,6 @@ $blue: #017AB5;
   padding: 0;
   border-top: none;
   background-color: $gray;
-  height: 100%;
   min-height: 100%;
 }
 
@@ -85,11 +84,12 @@ $blue: #017AB5;
 }
 
 #logo {
-  background-image: image-path("Prasinator_logo-01.png");
+  background-image: url("logo.png");
   background-size: 38px auto;
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
+  margin-top: 5px;
 }
 
 .main-container {
@@ -124,7 +124,7 @@ $blue: #017AB5;
 
 .drawer-icon {
   transition: all 0.2s;
-  font-weight: 200;
+  font-weight: 400;
   span {
     display: none;
   }
@@ -139,7 +139,7 @@ $blue: #017AB5;
       &:before, &:after {
         cursor: pointer;
         border-radius: 1px;
-        height: 1px;
+        height: 3px;
         width: 20px;
         background: $pink;
         position: absolute;
@@ -171,7 +171,6 @@ $blue: #017AB5;
     max-width: 200px;
     margin: 0 auto;
     background: #FFF2;
-    padding: 20px;
     border-radius: 2px;
     border: 2px solid $gray;
     img {
@@ -182,6 +181,7 @@ $blue: #017AB5;
   .team-name {
     padding: 20px 0;
     font-weight: 200;
+
   }
 }
 
@@ -192,7 +192,6 @@ $blue: #017AB5;
     max-width: 200px;
     .team-logo {
       background: #FFF2;
-      padding: 20px;
       border-radius: 2px;
       border:2px solid $pink;
       img {
@@ -203,6 +202,9 @@ $blue: #017AB5;
     .team-name {
       text-align: center;
       margin-top: 10px;
+      font-size: 20px;
+      padding: 20px 0;
+      font-weight: 400;
     }
   }
 }
@@ -222,7 +224,7 @@ $blue: #017AB5;
   background: #F1F1F2;
   font-weight: 400;
   text-transform: lowercase;
-  &:focus:active {
+  &:focus, &:active {
     outline: none;
   }
   &:hover {
@@ -235,7 +237,12 @@ $blue: #017AB5;
 
 .time-buttons {
   width: 100%;
+  .btn-group {
+    width: 100%;
+  }
   .btn {
+    width: 100%;
+    margin-top: 0;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -253,9 +260,25 @@ $blue: #017AB5;
     box-shadow: none;
   }
 }
+
+.chart-wrapper {
+  margin-top: 50px;
+}
 // .wordmark {
 //   background-image: url("praisonator_wordmark.svg");
 // }
+.wrapper {
+  width: 100%;
+}
+svg.chart {
+  display: table;
+  margin: 0 auto;
+}
+
+.star-title {
+  font-size: 22px;
+}
+
 footer {
   height: 20px;
   text-align: center;

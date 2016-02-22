@@ -8,7 +8,7 @@ ruby File.read(version_file).strip.sub(/\-p[0-9]+$/, '')
 gem 'rails', '4.2.5.1'
 gem 'postgresql'
 gem 'sidekiq'
-gem 'puma'
+gem 'thin'
 gem 'sinatra'
 gem 'faraday'
 gem 'faraday_middleware'

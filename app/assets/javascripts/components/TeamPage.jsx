@@ -9,6 +9,9 @@ import TimeInputContainer from './TimeInputContainer';
 import ChartWrapper from './ChartWrapper';
 
 class TeamPage extends React.Component {
+  getInitialState() {
+    return { team: this.props.team }
+  }
   renderChannelLinks() {
     var teamId = this.props.team.id;
     return this.props.team.channels.edges.map(({node}) => <ChannelLink key={node.id} channel={node} teamId={teamId}/>);
@@ -19,12 +22,15 @@ class TeamPage extends React.Component {
   }
 
   renderCharts() {
-    var { tone } = this.props.team
-    if (this.props.children){
-      return this.props.children
-    } else {
-          return <ChartWrapper emotional={tone} writing={tone} social={tone} />
-    }
+      console.log(this.props.team.name);
+
+    var { tone } = this.state.team
+    //
+    // if (this.props.children){
+    //   return this.props.children
+    // } else {
+      return <ChartWrapper emotional={tone} writing={tone} social={tone} />
+    // }
 
   }
   render() {

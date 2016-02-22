@@ -35,16 +35,36 @@ $blue: #017AB5;
    letter-spacing: .05em;
 
  }
+.landing-page-content {
+  h1 {
+    text-align: center;
+    color: $pink;
+    font-weight: 200;
+    text-transform: capitalize;
+  }
+  .btn {
+    float: right;
+  }
+}
 
+p {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px 0;
+  line-height: 20px;
+}
  h1, h2, h3, h4 {
   font-weight: 200;
   color: white;
-  text-transform: lowercase;
+  text-transform: capitalize;
   letter-spacing: 0.05em;
-  font-size: 48px;
+  font-size: 30px;
   padding-bottom: 29px;
 }
-
+h2 {
+  padding: 30px;
+}
 -webkit-scrollbar {
     background-color: $pink;
 }
@@ -225,7 +245,7 @@ $blue: #017AB5;
   font-size: 15px;
   background: #F1F1F2;
   font-weight: 400;
-  text-transform: lowercase;
+  text-transform: capitalize;
   &:focus, &:active {
     outline: none;
   }

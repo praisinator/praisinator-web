@@ -8,6 +8,7 @@ class ChartWrapper extends React.Component {
     super(props, context);
   }
   render() {
+    console.log(this.props.emotional.emotional_joy);
     return (
       <Col md={12} sm={12} className="chart-wrapper">
       <Chart data={this.props.emotional} prefix="emotional_" title="Emotions" />

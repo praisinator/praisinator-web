@@ -7,11 +7,13 @@ import Col from 'react-bootstrap/lib/Col';
 import ChartWrapper from './ChartWrapper';
 
 class ChannelPage extends React.Component {
-  renderCharts() {
-    var { tone } = this.props.channel
-    return <ChartWrapper emotional={tone} writing={tone} social={tone} />
-  }
+  // renderCharts() {
+  //   var { tone } = this.props.channel
+  //   return <ChartWrapper emotional={tone} writing={tone} social={tone} />
+  // }
   render() {
+    debugger;
+    let {channel} = this.props
     return (
       <div> Test </div>
     );
@@ -23,12 +25,7 @@ export default Relay.createContainer(ChannelPage, {
         channel: () => Relay.QL`
             fragment on Channel {
                 id,
-                name,
-                tone {
-                  ${ChartWrapper.getFragment('emotional')}
-                  ${ChartWrapper.getFragment('writing')}
-                  ${ChartWrapper.getFragment('social')}
-                }
+                name
             }
         `
     }

@@ -27,7 +27,7 @@ ReactDOM.render((
                 path="console" component={Console}
             />
               <Route path="teams/:id" component={TeamPage} queries={TeamQuery}>
-                <Route path=":id" component={ChannelPage} querires={ChannelQuery} />
+                <Route path="channels/:id" component={ChannelPage} querires={ChannelQuery} />
               </Route>
         </Route>
     </RelayRouter>

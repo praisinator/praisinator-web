@@ -41,9 +41,10 @@ $blue: #017AB5;
     color: $pink;
     font-weight: 200;
     text-transform: capitalize;
-  }
-  .btn {
-    float: right;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-size: 50px;
   }
 }
 
@@ -53,6 +54,7 @@ p {
   width: 50%;
   padding: 20px 0;
   line-height: 20px;
+  text-align: justify;
 }
  h1, h2, h3, h4 {
   font-weight: 200;
@@ -65,6 +67,12 @@ p {
 h2 {
   padding: 30px;
 }
+h3 {
+  font-size: 22px;
+  color: $pink;
+  text-align: center;
+  padding-bottom: 0;
+}
 -webkit-scrollbar {
     background-color: $pink;
 }
@@ -72,6 +80,32 @@ h2 {
 #root {
   height: 100%;
   min-height: 100%;
+}
+
+.btn-toolbar {
+  text-align: center;
+  width: 420px;
+  margin: 0 auto;
+  .btn {
+    margin: 5px;
+  }
+}
+.sub-text {
+  padding-top: 70px;
+  p {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+.slack-logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.fa {
+  font-size: 100px;
+
 }
 
 .container-fluid {
@@ -184,7 +218,6 @@ h2 {
     }
   }
 }
-
 .team-link-container {
   padding: 20px 0;
   text-align: center;
@@ -305,12 +338,31 @@ svg.chart {
 .star-title {
   font-size: 22px;
 }
-
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 footer {
   height: 20px;
   text-align: center;
   color: $pink;
   font-weight: 300;
+  border-top: 2px solid $pink;
+  margin: 0px 20px;
+  padding: 10px 0;
+  .fa {
+    font-size: 10px;
+  }
+  a {
+    color: $pink;
+    text-decoration: none;
+    &:hover {
+      color: $pink;
+      text-decoration: none;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

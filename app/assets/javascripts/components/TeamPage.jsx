@@ -34,7 +34,7 @@ class TeamPage extends React.Component {
                                 <img src={this.props.team.logo_url}/>
                             </div>
                             <div className="team-name">
-                                {this.props.team.name}
+                              Channels
                             </div>
                               {this.renderChannelLinks()}
                         </div>
@@ -42,6 +42,7 @@ class TeamPage extends React.Component {
                     <Col md={10} sm={10}>
                         <Row>
                             {this.renderTimeInputContainer()}
+                            <h1> {this.props.team.name} Mood </h1>
                         </Row>
                         <Row>
                             {this.renderCharts()}

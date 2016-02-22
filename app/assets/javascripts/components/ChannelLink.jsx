@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/lib/Button';
 class ChannelLink extends React.Component {
   render() {
     return (
-      <Link to={`/channels/${this.props.channel.id}`}>
+      <Link to={`teams/${this.props.teamId}/channels/${this.props.channel.id}`}>
         <Button className="channel-link"> {this.props.channel.name} </Button>
       </Link>
     );

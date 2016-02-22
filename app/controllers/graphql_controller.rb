@@ -1,7 +1,11 @@
 class GraphqlController < ApplicationController
 
   def query
-    render json: Schema.execute(params[:query].to_s)
+    def execute
+      puts '-' * 100, GraphQLFormatter.new(params[:query]).to_s, '-' * 100
+      result = RelaySchema.execute(params[:query], debug: true, variables: params[:variables])
+      render json: result
+    end
   end
 
 end

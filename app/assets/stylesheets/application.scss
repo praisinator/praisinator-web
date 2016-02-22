@@ -60,7 +60,9 @@ $blue: #017AB5;
   background-color: $gray;
   min-height: 100%;
 }
-
+.container .navbar-header {
+  float: left;
+}
 .navbar-default {
   background-color: $gray;
   border: none;
@@ -78,7 +80,7 @@ $blue: #017AB5;
 
 .navbar-nav {
   float: right;
-  padding: 30px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
   color: $pink;
 
 }
@@ -233,6 +235,10 @@ $blue: #017AB5;
     box-shadow: none;
     border:2px solid $pink;
   }
+  &:active {
+    box-shadow: none;
+    background: #BADCA7;
+  }
 }
 
 .time-buttons {
@@ -269,6 +275,7 @@ $blue: #017AB5;
 // }
 .wrapper {
   width: 100%;
+  padding-bottom: 100px;
 }
 svg.chart {
   display: table;

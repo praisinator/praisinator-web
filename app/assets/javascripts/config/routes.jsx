@@ -15,21 +15,10 @@ import ChannelQuery from '../queries/channel_query';
 
 ReactDOM.render((
     <RelayRouter history={browserHistory}>
-        <Route
-            path="/"
-            component={PraisinatorApp}
-            queries={RootQuery}
-        >
-            <IndexRoute
-                component={LandingPage}
-            />
-            <Route
-                path="console" component={Console}
-            />
-            <Route path="teams/:id" component={TeamPage} queries={TeamQuery}>
-
-            </Route>
-
+        <Route path="/" component={PraisinatorApp} queries={RootQuery}>
+            <IndexRoute component={LandingPage}/>
+            <Route path="console" component={Console}/>
+            <Route path="teams/:id" component={TeamPage} queries={TeamQuery} />
             <Route path="channels/:id" component={ChannelPage} querires={ChannelQuery} />
         </Route>
     </RelayRouter>

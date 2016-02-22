@@ -3,30 +3,48 @@ import Relay from 'react-relay';
 import Col from 'react-bootstrap/lib/Col';
 import Chart from './Chart'
 
-
-var sampleData = [
-  {id: '5fbmzmtc', x: 7, y: 41, z: 6},
-  {id: 's4f8phwm', x: 11, y: 45, z: 9},
-  // ...
-];
 class ChartWrapper extends React.Component {
   constructor(props, context) {
     super(props, context);
-    this.state = {
-      data: sampleData,
-      domain: {x: [0, 30], y: [0, 100]}
-    };
   }
-
   render() {
     return (
-      <Col md={12} sm={12}>
-      <Chart
-        data={this.state.data}
-        domain={this.state.domain} />
+      <Col md={12} sm={12} className="chart-wrapper">
+      <Chart data={this.props.emotional} prefix="emotional_" title="Emotions" />
+      <Chart data={this.props.writing} prefix="writing_" title="Writing" />
+      <Chart data={this.props.social} prefix="social_" title="Social" />
       </Col>
     );
   }
 }
 
-export default ChartWrapper;
+const Container = Relay.createContainer(ChartWrapper, {
+    fragments: {
+        emotional: () => Relay.QL`
+          fragment on Tone {
+            emotional_sadness,
+            emotional_disgust,
+            emotional_fear,
+            emotional_anger,
+            emotional_joy
+          }
+        `,
+        writing: () => Relay.QL`
+          fragment on Tone {
+            writing_analytical,
+            writing_confident,
+            writing_tentative,
+          }
+        `,
+        social: () => Relay.QL`
+          fragment on Tone {
+            social_openness,
+            social_conscientiousness,
+            social_extraversion,
+            social_agreeableness
+          }
+        `
+    }
+});
+
+export default Container

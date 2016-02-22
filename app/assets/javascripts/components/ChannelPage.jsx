@@ -16,14 +16,14 @@ class ChannelPage extends React.Component {
         let { channel } = this.props;
         let { tone } = channel;
         return (
-        <Col md={10} sm={10}>
+        <span>
             <Row>
                 {this.renderTimeInputContainer()}
             </Row>
             <Row>
                 <ChartWrapper key={channel.id} emotional={tone} writing={tone} social={tone}/>
             </Row>
-        </Col>
+        </span>
         )
     }
 }

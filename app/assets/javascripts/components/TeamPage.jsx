@@ -26,14 +26,14 @@ class TeamPage extends React.Component {
 
     renderTeam(){
         return(
-            <Col md={10} sm={10}>
+            <span>
                 <Row>
                     {this.renderTimeInputContainer()}
                 </Row>
                 <Row>
                     {this.renderCharts()}
                 </Row>
-            </Col>
+                </span>
         )
     }
 
@@ -61,7 +61,10 @@ class TeamPage extends React.Component {
                               {this.renderChannelLinks()}
                         </div>
                     </Col>
+                      <Col md={10} sm={10}>
+                      <Row> <h1> {this.props.team.name} Mood </h1></Row>
                     {this.renderTeamOrChannel()}
+                    </Col>
                 </Row>
             </Grid>
         );
